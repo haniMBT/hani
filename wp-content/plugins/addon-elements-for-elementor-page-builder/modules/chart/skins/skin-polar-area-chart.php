@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0009</td>
-<td bgcolor="#eeeeec" align="right">359472</td>
+<td bgcolor="#eeeeec" align="center">0.0004</td>
+<td bgcolor="#eeeeec" align="right">357424</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\addon-elements-for-elementor-page-builder\modules\chart\skins\skin-polar-area-chart.php" bgcolor="#eeeeec">...\skin-polar-area-chart.php<b>:</b>0</td>
 </tr>

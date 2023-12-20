@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0010</td>
-<td bgcolor="#eeeeec" align="right">361800</td>
+<td bgcolor="#eeeeec" align="center">0.0003</td>
+<td bgcolor="#eeeeec" align="right">356120</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\simply-static\vendor\symfony\css-selector\Parser\Handler\WhitespaceHandler.php" bgcolor="#eeeeec">...\WhitespaceHandler.php<b>:</b>0</td>
 </tr>

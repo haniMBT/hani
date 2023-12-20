@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0025</td>
-<td bgcolor="#eeeeec" align="right">445112</td>
+<td bgcolor="#eeeeec" align="center">0.0033</td>
+<td bgcolor="#eeeeec" align="right">380760</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentytwenty\inc\template-tags.php" bgcolor="#eeeeec">...\template-tags.php<b>:</b>0</td>
 </tr>

@@ -1,15 +1,16 @@
-<div id="general" class="eael-settings-tab active">
-    <div class="row eael-admin-general-wrapper">
-        <div class="eael-admin-general-inner">
-            <div class="eael-admin-block-wrapper">
-
-                    <br>
+<div id="general" class="eael-admin-setting-tab active">
+    <div class="eael-grid">
+        <div class="eael-col-xl-8">
+            <div class="eael-block px45 py25">
+                <div class="eael-basic__card  align__center justify__between eael__flex justify__between">
+                    <p><i class="ea-admin-icon eael-icon-edit"></i>
+                        <br>
 <font size="1"><table class="xdebug-error xe-uncaught-exception" dir="ltr" border="1" cellspacing="0" cellpadding="1">
 <tr><th align="left" bgcolor="#f57900" colspan="5">
-<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function do_action() in C:\wamp86\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\templates\admin\general.php on line <i>6</i>
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function _e() in C:\wamp86\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\templates\admin\general.php on line <i>7</i>
 </th></tr>
 <tr><th align="left" bgcolor="#f57900" colspan="5">
-<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Error: Call to undefined function do_action() in C:\wamp86\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\templates\admin\general.php on line <i>6</i>
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Error: Call to undefined function _e() in C:\wamp86\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\templates\admin\general.php on line <i>7</i>
 </th></tr>
 <tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
 <tr>
@@ -21,12 +22,14 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0012</td>
-<td bgcolor="#eeeeec" align="right">396200</td>
+<td bgcolor="#eeeeec" align="center">0.0006</td>
+<td bgcolor="#eeeeec" align="right">364864</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\templates\admin\general.php" bgcolor="#eeeeec">...\general.php<b>:</b>0</td>
 </tr>
 </table></font>
+</p>
+</div>
 </div>
 </div>
 </div>

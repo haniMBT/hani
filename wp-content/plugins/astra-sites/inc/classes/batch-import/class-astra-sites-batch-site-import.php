@@ -16,21 +16,21 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0020</td>
+<td bgcolor="#eeeeec" align="center">0.0002</td>
 <td bgcolor="#eeeeec" align="right">356096</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\classes\batch-import\class-astra-sites-batch-site-import.php" bgcolor="#eeeeec">...\class-astra-sites-batch-site-import.php<b>:</b>0</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">2</td>
-<td bgcolor="#eeeeec" align="center">0.0020</td>
+<td bgcolor="#eeeeec" align="center">0.0002</td>
 <td bgcolor="#eeeeec" align="right">356400</td>
 <td bgcolor="#eeeeec">Astra_Sites_Batch_Site_Import::get_instance(  )</td>
-<td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\classes\batch-import\class-astra-sites-batch-site-import.php" bgcolor="#eeeeec">...\class-astra-sites-batch-site-import.php<b>:</b>715</td>
+<td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\classes\batch-import\class-astra-sites-batch-site-import.php" bgcolor="#eeeeec">...\class-astra-sites-batch-site-import.php<b>:</b>718</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">3</td>
-<td bgcolor="#eeeeec" align="center">0.0020</td>
+<td bgcolor="#eeeeec" align="center">0.0002</td>
 <td bgcolor="#eeeeec" align="right">356472</td>
 <td bgcolor="#eeeeec">Astra_Sites_Batch_Site_Import->__construct(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\classes\batch-import\class-astra-sites-batch-site-import.php" bgcolor="#eeeeec">...\class-astra-sites-batch-site-import.php<b>:</b>56</td>

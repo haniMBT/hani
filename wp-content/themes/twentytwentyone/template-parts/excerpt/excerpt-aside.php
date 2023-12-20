@@ -17,7 +17,7 @@
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
 <td bgcolor="#eeeeec" align="center">0.0008</td>
-<td bgcolor="#eeeeec" align="right">356376</td>
+<td bgcolor="#eeeeec" align="right">356208</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentytwentyone\template-parts\excerpt\excerpt-aside.php" bgcolor="#eeeeec">...\excerpt-aside.php<b>:</b>0</td>
 </tr>

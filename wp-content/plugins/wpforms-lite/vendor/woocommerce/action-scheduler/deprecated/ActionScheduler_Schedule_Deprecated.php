@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0010</td>
-<td bgcolor="#eeeeec" align="right">356344</td>
+<td bgcolor="#eeeeec" align="center">0.0003</td>
+<td bgcolor="#eeeeec" align="right">357488</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\vendor\woocommerce\action-scheduler\deprecated\ActionScheduler_Schedule_Deprecated.php" bgcolor="#eeeeec">...\ActionScheduler_Schedule_Deprecated.php<b>:</b>0</td>
 </tr>

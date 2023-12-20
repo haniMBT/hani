@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0009</td>
+<td bgcolor="#eeeeec" align="center">0.0002</td>
 <td bgcolor="#eeeeec" align="right">357016</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\libs\sodium_compat\namespaced\Core\Curve25519\Ge\Cached.php" bgcolor="#eeeeec">...\Cached.php<b>:</b>0</td>

@@ -5,7 +5,7 @@
 	<div class="wp-block-group">
 		<!-- wp:image {"align":"center","width":"45px","height":"49px","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
 		<figure class="wp-block-image aligncenter size-full is-resized">
-			<img src="https://hanimbt.github.io/wordpress/wp-content/themes/twentytwentyfour/patterns/<br />_<font size='1'><table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>_<tr><th align='left' bgcolor='#f57900' colspan="><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\page-newsletter-landing.php on line <i>19</i>
+			<img src="https://hanimbt.github.io/hani/wp-content/themes/twentytwentyfour/patterns/<br />_<font size='1'><table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>_<tr><th align='left' bgcolor='#f57900' colspan="><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\page-newsletter-landing.php on line <i>19</i>
 <tr><th align="left" bgcolor="#f57900" colspan="5">
 <span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\page-newsletter-landing.php on line <i>19</i>
 </th></tr>
@@ -19,8 +19,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0010</td>
-<td bgcolor="#eeeeec" align="right">362752</td>
+<td bgcolor="#eeeeec" align="center">0.0005</td>
+<td bgcolor="#eeeeec" align="right">358872</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\page-newsletter-landing.php" bgcolor="#eeeeec">...\page-newsletter-landing.php<b>:</b>0</td>
 </tr>

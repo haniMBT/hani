@@ -7,7 +7,7 @@
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%">
 			<!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|duotone-1"}},"className":"is-style-rounded"} -->
 			<figure class="wp-block-image size-full is-style-rounded">
-				<img src="https://hanimbt.github.io/wordpress/wp-content/themes/twentytwentyfour/patterns/<br />_<font size='1'><table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>_<tr><th align='left' bgcolor='#f57900' colspan="><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\cta-services-image-left.php on line <i>18</i>
+				<img src="https://hanimbt.github.io/hani/wp-content/themes/twentytwentyfour/patterns/<br />_<font size='1'><table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>_<tr><th align='left' bgcolor='#f57900' colspan="><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\cta-services-image-left.php on line <i>18</i>
 <tr><th align="left" bgcolor="#f57900" colspan="5">
 <span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\cta-services-image-left.php on line <i>18</i>
 </th></tr>
@@ -21,8 +21,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0009</td>
-<td bgcolor="#eeeeec" align="right">363664</td>
+<td bgcolor="#eeeeec" align="center">0.0005</td>
+<td bgcolor="#eeeeec" align="right">358880</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\cta-services-image-left.php" bgcolor="#eeeeec">...\cta-services-image-left.php<b>:</b>0</td>
 </tr>

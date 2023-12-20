@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0021</td>
+<td bgcolor="#eeeeec" align="center">0.0003</td>
 <td bgcolor="#eeeeec" align="right">356360</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\addon-elements-for-elementor-page-builder\modules\content-switcher\widgets\content-switcher.php" bgcolor="#eeeeec">...\content-switcher.php<b>:</b>0</td>

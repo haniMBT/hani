@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0008</td>
-<td bgcolor="#eeeeec" align="right">361048</td>
+<td bgcolor="#eeeeec" align="center">0.0004</td>
+<td bgcolor="#eeeeec" align="right">357488</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\addon-elements-for-elementor-page-builder\wpml\modules\class-wpml-eae-data-table-header.php" bgcolor="#eeeeec">...\class-wpml-eae-data-table-header.php<b>:</b>0</td>
 </tr>

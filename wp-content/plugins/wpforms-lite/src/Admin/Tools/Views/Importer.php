@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0017</td>
-<td bgcolor="#eeeeec" align="right">402608</td>
+<td bgcolor="#eeeeec" align="center">0.0007</td>
+<td bgcolor="#eeeeec" align="right">368656</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\src\Admin\Tools\Views\Importer.php" bgcolor="#eeeeec">...\Importer.php<b>:</b>0</td>
 </tr>

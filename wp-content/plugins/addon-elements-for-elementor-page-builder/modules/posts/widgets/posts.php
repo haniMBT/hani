@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0056</td>
+<td bgcolor="#eeeeec" align="center">0.0015</td>
 <td bgcolor="#eeeeec" align="right">646256</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\addon-elements-for-elementor-page-builder\modules\posts\widgets\posts.php" bgcolor="#eeeeec">...\posts.php<b>:</b>0</td>

@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0012</td>
-<td bgcolor="#eeeeec" align="right">362592</td>
+<td bgcolor="#eeeeec" align="center">0.0002</td>
+<td bgcolor="#eeeeec" align="right">356120</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\simply-static\vendor\symfony\css-selector\Parser\Shortcut\HashParser.php" bgcolor="#eeeeec">...\HashParser.php<b>:</b>0</td>
 </tr>

@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0033</td>
+<td bgcolor="#eeeeec" align="center">0.0020</td>
 <td bgcolor="#eeeeec" align="right">597432</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\libs\sodium_compat\src\File.php" bgcolor="#eeeeec">...\File.php<b>:</b>0</td>

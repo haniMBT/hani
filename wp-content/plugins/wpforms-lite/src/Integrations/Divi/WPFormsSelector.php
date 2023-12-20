@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0016</td>
-<td bgcolor="#eeeeec" align="right">372840</td>
+<td bgcolor="#eeeeec" align="center">0.0007</td>
+<td bgcolor="#eeeeec" align="right">360608</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\src\Integrations\Divi\WPFormsSelector.php" bgcolor="#eeeeec">...\WPFormsSelector.php<b>:</b>0</td>
 </tr>

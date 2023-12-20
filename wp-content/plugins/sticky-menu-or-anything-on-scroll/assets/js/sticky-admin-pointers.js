@@ -1,7 +1,7 @@
 /*
  * Sticky Anything
  * Backend GUI pointers
- * (c) WebFactory Ltd, 2015 - 2021
+ * (c) WebFactory Ltd, 2015 - 2022
  */
 
 

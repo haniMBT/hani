@@ -16,21 +16,21 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0015</td>
+<td bgcolor="#eeeeec" align="center">0.0003</td>
 <td bgcolor="#eeeeec" align="right">356336</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\classes\compatibility\astra-pro\class-astra-sites-compatibility-astra-pro.php" bgcolor="#eeeeec">...\class-astra-sites-compatibility-astra-pro.php<b>:</b>0</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">2</td>
-<td bgcolor="#eeeeec" align="center">0.0015</td>
+<td bgcolor="#eeeeec" align="center">0.0004</td>
 <td bgcolor="#eeeeec" align="right">356640</td>
 <td bgcolor="#eeeeec">Astra_Sites_Compatibility_Astra_Pro::get_instance(  )</td>
-<td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\classes\compatibility\astra-pro\class-astra-sites-compatibility-astra-pro.php" bgcolor="#eeeeec">...\class-astra-sites-compatibility-astra-pro.php<b>:</b>309</td>
+<td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\classes\compatibility\astra-pro\class-astra-sites-compatibility-astra-pro.php" bgcolor="#eeeeec">...\class-astra-sites-compatibility-astra-pro.php<b>:</b>311</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">3</td>
-<td bgcolor="#eeeeec" align="center">0.0015</td>
+<td bgcolor="#eeeeec" align="center">0.0004</td>
 <td bgcolor="#eeeeec" align="right">356680</td>
 <td bgcolor="#eeeeec">Astra_Sites_Compatibility_Astra_Pro->__construct(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\classes\compatibility\astra-pro\class-astra-sites-compatibility-astra-pro.php" bgcolor="#eeeeec">...\class-astra-sites-compatibility-astra-pro.php<b>:</b>37</td>

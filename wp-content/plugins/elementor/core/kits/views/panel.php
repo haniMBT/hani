@@ -15,6 +15,6 @@
 <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! ) Error: Call to undefined function esc_html__() in C:\wamp86\www\wordpress\wp-content\plugins\elementor\core\kits\views\panel.php on line <i>12
 <tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack
 <tr><th align='center' bgcolor='#eeeeec'>#<th align='left' bgcolor='#eeeeec'>Time<th align='left' bgcolor='#eeeeec'>Memory<th align='left' bgcolor='#eeeeec'>Function<th align='left' bgcolor='#eeeeec'>Location
-<tr><td bgcolor='#eeeeec' align='center'>1<td bgcolor='#eeeeec' align='center'>0.0011<td bgcolor='#eeeeec' align='right'>355560<td bgcolor='#eeeeec'>{main}(  )<td title='C:\wamp86\www\wordpress\wp-content\plugins\elementor\core\kits\views\panel.php' bgcolor='#eeeeec'>...\panel.php<b>:0
+<tr><td bgcolor='#eeeeec' align='center'>1<td bgcolor='#eeeeec' align='center'>0.0006<td bgcolor='#eeeeec' align='right'>357408<td bgcolor='#eeeeec'>{main}(  )<td title='C:\wamp86\www\wordpress\wp-content\plugins\elementor\core\kits\views\panel.php' bgcolor='#eeeeec'>...\panel.php<b>:0
 
 </script>

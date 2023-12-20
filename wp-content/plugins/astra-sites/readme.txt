@@ -1,11 +1,11 @@
-=== Starter Templates — Elementor, Gutenberg & Beaver Builder Templates ===
+=== Starter Templates — Elementor, WordPress & Beaver Builder Templates ===
 Contributors: brainstormforce
 Donate link: https://wpastra.com/pro/
-Tags: Elementor,Beaver Builder,Templates,Gutenberg,Astra Starter Sites
+Tags: Elementor,Beaver Builder,Templates,Gutenberg,Block Editor,Astra Starter Sites
 Requires at least: 4.4
 Requires PHP: 5.3
-Tested up to: 5.8
-Stable tag: 2.7.5
+Tested up to: 6.4
+Stable tag: 3.5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,13 +13,13 @@ The growing library of 300+ ready-to-use templates that work with all WordPress 
 
 == Description ==
 
-https://www.youtube.com/watch?v=QUb3gRPtWQg&feature=youtu.be
-
-= FREE TEMPLATES FOR ELEMENTOR, BEAVER BUILDER, BRIZY AND GUTENBERG =
+= FREE TEMPLATES FOR ELEMENTOR, BEAVER BUILDER AND BLOCK EDITOR =
 
 Create professional designed pixel perfect websites in minutes with the Starter Templates plugin.
 
-This plugin gives you access to 280+ pre-made full website templates and individual pages for your favorite page builder such as Elementor, Beaver Builder, Brizy and the WordPress default editor Gutenberg.
+This plugin gives you access to 280+ pre-made full website templates and individual pages for your favorite page builder such as Elementor, Beaver Builder and the Block Editor.
+
+[Try it out on a free dummy site](https://bsf.io/starter-templates-demo)
 
 All you need to do is select the demo that suits your needs, import, tweak and go live!
 
@@ -27,32 +27,18 @@ All you need to do is select the demo that suits your needs, import, tweak and g
 
 > Astra Sites allows anyone to have a beautiful website in under 5 minutes while using all open source software. The theme is free, the plugin is free, it’s almost unbelievable. You have to see it with your own eyes. – Adam Preiser, WPCrafter
 
-= INTRODUCING STARTER TEMPLATES 2.0! =
+= INTRODUCING STARTER TEMPLATES 3.0! =
 
 The Astra Starter Sites plugin allowed you to import complete website demos, tweak them and build professional websites.
 
-With Starter Templates 2.0, you can now do that by importing specific pages, complete websites or even Elementor blocks that give you lots of flexibility to import only what you need.
+With Starter Templates 3.0, you can now do that by importing specific pages, complete websites or even Elementor blocks that give you lots of flexibility to import only what you need.
 
-= HIGHLIGHTS OF STARTER TEMPLATES 2.0 =
+= HIGHLIGHTS OF STARTER TEMPLATES 3.0 =
 
-- An improved and easier template search option.
-- Filters that let you pick templates of a specific page builder.
-- Ability to mark your favorite templates.
-- Easier way to fetch the latest templates with a single click.
-- Ability to import individual pages to mix-n-match and build websites.
-- Option to inherit theme settings while importing a template.
-- Image search to import images from Pixabay through the WordPress Media Library.
-- Import ready Elementor blocks and templates through the page builder itself!
-
-= GET A WEBSITE LIVE IN 5 CLICKS! =
-
-1. Install and activate Starter Templates Plugin
-2. Select the page builder you wish to work with
-3. Pick a website / page demo that suits your needs
-4. Install required plugins with a single click
-5. Import the website / page template
-6. Done!
-
+- All new user interface to make it easier to select and customize the templates when you are building your website.
+- Amazing search to find the template suitable for your needs.
+- Ability to try the logo, colors and typography before importing.
+- Improved stability. We have improved our importer, which already was very stable. Now after this release, imports will rarely fail.
 
 = FULL WEBSITE TEMPLATES FOR =
 
@@ -60,10 +46,9 @@ Businesses like restaurants, lawyers, agencies, interior designers, artist shops
 
 - [Elementor Free Website Templates](https://wpastra.com/elementor-templates-free-downloads/)
 - [Beaver Builder Free Website Templates](https://wpastra.com/ready-websites/?page-builder=beaver-builder&category=free)
-- [Gutenberg Free Website Templates](https://wpastra.com/ready-websites/?page-builder=gutenberg&category=free)
-- [Brizy Free Website Templates](https://wpastra.com/ready-websites/?page-builder=brizy&category=free)
+- [Block Editor Free Website Templates](https://wpastra.com/ready-websites/?page-builder=gutenberg&category=free)
 
-You can extend this library with premium ready-to-use website demos by purchasing one of the Astra Bundles, i.e. either the Essential Bundle or the Growth Bundle.
+You can extend this library with premium ready-to-use website demos by purchasing one of the Essential or Business Toolkits.
 
 = WHY PEOPLE LOVE THE ASTRA THEME? =
 
@@ -130,7 +115,7 @@ All you need to do is install the Starter Templates plugin and select the websit
 
 = Will you add more website demos? =
 
-Yes! We are working on many more free website demos built using Elementor, Beaver Builder, Gutenberg and Brizy.
+Yes! We are working on many more free website demos built using Elementor, Beaver Builder and the Block Editor.
 
 = What if I do not find a website for the topic I am looking for? =
 
@@ -141,13 +126,315 @@ We are open to suggestions and would love to work on topics that our users are l
 
 1. Select the page builder of your choice.
 2. Browse through available Starter Templtes and select the site that you like.
-3. Filter using available Starter Temapltes categories.
-4. View all the pages for the starter site.
-5. Click the import button to start the import process.
-6. Blocks import in Elementor editor.
-7. Free Images by Pixabay right inside the WordPress media popup.
+3. Add a logo and preview how it will look in the template, Skip if you do not have a logo right away.
+4. Customize the color palette for the site, you can skip and customize this later on as well.
+5. Customize the typography of the website, you can skip and customize this later on as well.
+6. Start the website building process.
+7. Blocks import in Elementor editor.
+8. Free Images by Pixabay right inside the WordPress media popup.
 
 == Changelog ==
+
+v3.5.5 - 19-December-2023
+- Improvement: User Interface improvements for the Template Kit library.
+- Improvement: Downloading the selected images in the onboarding of the Template Kit library to media.
+- Improvement: The Disable AI option in the Template Kit library will be similar to the Manage AI feature option in Spectra.
+- Improvement: Updating Disable AI option value based on Non-Adaptive mode option in Template Kit library.
+- Fix: The non-Adaptive mode option of the Template Kit library was not getting enabled after reloading the page.
+
+v3.5.4 - 15-December-2023
+- Fix: Generate Content with the AI button was not showing in the Template Kit library if a user is already authorized to ZipAI.
+- Fix: Patterns & Pages preview from Template Kit was not compatible with RTL.
+- Fix: Fixed an issue where the translation was working on some screens.
+
+v3.5.3 - 13-December-2023
+- New: Introduced Non-adaptive mode option in Template Kit library.
+- Improvement: Added default line-height to heading tag in Template Kit library for a better preview of patterns and pages.
+
+v3.5.2 - 07-December-2023
+- New: All new AI based Template Kit library.
+
+v3.5.1 - 05-December-2023
+- Fix: Revert to Template Kit library v1.3.3
+
+v3.5.0 - 05-December-2023
+- New: All new AI based Template Kit library.
+- Improvement: Update the existing nomenclatures for the premium plans for Essential and Business Toolkits to Essential and Growth Bundles.
+- Fix: Fixed an issue where the WooCommerce description & short description are not displayed.
+- Fix: Removed the alert box that pops up when a user tries to leave the page after import process is done.
+
+v3.4.6 - 17-November-2023
+- Improvement: Added a filter to remove the page builder selection screen and automatically select the Block Editor.
+- Improvement: Ability to remove Elementor as a Page Builder from the selection list.
+- Fix: Prevented CartFlows plugin redirection when import is in progress.
+- Fix: Handled usage of deprecated  function get_page_by_title
+
+v3.4.5 - 02-November-2023
+- Improvement: Added extra checks for filesystem permission during template import.
+- Improvement: Display a notice if filesystem permissions are insufficient.
+- Fix: On the welcome screen, the "Getting Started" button link now respects sub-folder WordPress installations.
+- Fix: Corrected an issue where uploaded retina images were not displayed after importing.
+
+v3.4.4 - 02-October-2023
+- Fix: Fixed an issue where the Free Images feature was missing in the Premium Starter Templates plugin.
+
+v3.4.3 - 26-September-2023
+- Fix: Fixed a fatal error issue with widgets import in the process.
+
+v3.4.2 - 20-September-2023
+- Fix: Plugin causes redirect URL related warnings with WP CLI plugin activate command.
+
+v3.4.1 - 13-September-2023
+- Improvement: Improved the Starter Template Modal for users using Elementor in Dark Mode.
+- Fix: Addressed broken links and alignment issues in the welcome banner, especially on different resolutions.
+- Fix: Fixed the issue of displaying HTML Markup in the notice when a block is not found in Elementor.
+
+v3.4.0 - 11-August-2023
+- New: Added SureCart variation for every eCommerce based template.
+- Fix: Resolved an issue where the import progress percentage would overflow the limit.
+
+v3.3.0 - 02-August-2023
+- New: Added compatibility to FSE based Spectra One theme.
+- Improvement: Added Plugin Name in a few admin notices in order to make it better readable and understandable.
+- Improvement: Improved code to match the WordPress coding standards.
+- Improvement: Optimised the onboarding screens for streamlined experience.
+- Fix: Fixed an issue with the import process sequence to avoid overflow in the progress percent.
+
+v3.2.6 - 16-June-2023
+- Fix: An issue that occurred as a regression from v3.2.4, where CartFlows flows were not being imported.
+
+v3.2.5 - 15-June-2023
+- Improvement: Removed redundant functions to improve code efficiency.
+- Improvement: Improved the synchronisation process.
+- Fix: Resolved a console error issue while importing Elementor blocks that contain WPForms integration.
+
+v3.2.4 - 14-June-2023
+- Fix: Tightened the security of the plugin
+
+v3.2.3 - 22-May-2023
+- Improvement: Updated the Block Editor Template Library
+
+v3.2.2 - 15-May-2023
+- Improvement: Added Premium Templates for Block Editor.
+
+v3.2.1 - 13-April-2023
+- Fix: Template is not importing using the WP-CLI command.
+
+v3.2.0 - 04-April-2023
+- Fix: Backup file not created for existing customizer settings.
+- Fix: Icon for Starter Templates plugin isn’t appropriately distributed within the Elementor Editor.
+
+v3.1.27 - 24-February-2023
+- Fix: Templates library won't refresh after the sync process.
+
+v3.1.26 - 22-February-2023
+- Fix: Plugin installation from WordPress plugins dashboard fails when Starter Template is activated.
+
+v3.1.25 - 22-February-2023
+- Improvement: Hardened the security.
+
+v3.1.24 - 26-January-2023
+- Improvement: Hardened the security.
+
+v3.1.23 - 19-January-2023
+- Improvement: Added extra checks while block templates import.
+
+v3.1.22 - 02-January-2023
+- Improvement: Added support for Astra theme menu position to top.
+
+v3.1.21 - 23-December-2022
+- Improvement: Added extra checks while marking a Starter Template as favorite.
+
+v3.1.20 - 12-December-2022
+- Fix: Import error for Gutenberg templates with PHP 8.x.
+
+v3.1.19 - 09-December-2022
+- Fix: Page builder not set using WP-cli command.
+
+v3.1.18 - 04-November-2022
+- Fix: Compatibility to WordPress 6.1.
+- Improvement: Responsive welcome banner notice on WP dashboard for fresh installation.
+
+v3.1.17 - 10-October-2022
+- New: Added welcome banner notice on WP dashboard for fresh installation.
+
+v3.1.16 - 12-September-2022
+- Improvement: Added compatibility for Spectra.
+- Fix: White screen is appearing on latest safari 15+ browser when select any template.
+- Fix: Install Spectra only when light category Patterns importing.
+
+v3.1.15 - 23-Aug-2022
+- Improvement: Install Spectra while importing Block Patterns and Wireframe Patterns.
+
+v3.1.14 - 18-Aug-2022
+- Fix: Block editor templates are not imported correctly.
+
+v3.1.13 - 18-July-2022
+- Fix: Prevent invalid redirection after template import.
+
+v3.1.12 - 12-July-2022
+- Improvement: Disable promotes Essential & Growth bundle when white label is enabled.
+- Fix: Templates are not displayed when we install plugin from Astra notice.
+- Fix: Display "Install Required Plugins" checkbox option if required plugins are not installed.
+
+v3.1.11 - 03-June-2022
+- Improvement: Activate plugins using WP-CLI when importing demo using cli command.
+
+v3.1.10 - 19-May-2022
+- Improvement: Renamed button text from Starter Templates to Template Kits.
+
+v3.1.9 - 16-May-2022
+- Improvement: Enhanced test environments.
+- Fix: Fixed redirection of few required plugins during import.
+- Fix: Missing support for wp_block post type in Gutenberg templates.
+
+v3.1.8 - 13-April-2022
+- Fix: Fixed an issue with the click action for category mega menu titles.
+- Fix: Fixed an issue with the Popular and Latest filters.
+- Fix: Improved import error messages.
+- Fix: UI improvement on the last screen for Starter Template import.
+
+v3.1.7 - 17-March-2022
+- Fix: Fixed an issue with multiple import processes being invoked when the theme is not activated.
+
+v3.1.6 - 8-March-2022
+- Improvement: Better error reporting for the import process.
+- Fix: Fixed an issue where the Starter Templates library won't refresh after the sync process.
+
+v3.1.5 - 25-February-2022
+- Improvement: Better logging for import process.
+
+v3.1.4 - 22-February-2022
+- Improvement: Added compatibility to Starter Templates with Easy Digital Downloads plugin.
+
+v3.1.3 - 7-February-2022
+- Fix: Fixed an issue with retina logo image download during import.
+- Fix: Fixed an issue with WP Forms not being imported when used in the footer of the website.
+- Fix: Fixed a console error in some cases where the template took longer to fetch its contents.
+
+v3.1.2 - 28-January-2022
+- Fix: Fixed a blank page error on the main Starter Template screen due to the last update (v3.1.2).
+
+v3.1.1 - 28-January-2022
+- Fix: Import error for Elementor Blocks with PHP 8.x.
+
+v3.1.0 - 21-January-2022
+- New: Added new mega menu-based categories for better segregation of templates.
+- New: Improved search functionality for better results.
+- Improvement: Improved error handling when plugin installation/activation fails for slow hosting providers.
+- Improvement: Added a pre-import screen to notify about file permissions on the website to avoid errors.
+- Fix: Fixed an issue with redirection while installing the WP Forms plugin.
+- Fix: Fixed an issue with the sync functionality.
+
+v3.0.25 - 11-January-2022
+- Fix: Fixed an issue where WooCommerce pages won't get created when the Starter Templates plugin is active.
+- Fix: Fixed an error with XML importer.
+
+v3.0.24 - 7-January-2022
+- Fix: Fixed an issue with WXR Import versioning.
+
+v3.0.23 - 6-January-2022
+- Fix: Better error and exception handling while importing.
+- Fix: Fixed an issue with redirection while installing Ultimate Addons for Beaver Builder - Lite plugin.
+- Fix: Fixed an issue where the templates library won't refresh in real-time after the sync process.
+- Fix: Presto Player installation showing PHP incompatibility notice while importing a template.
+
+v3.0.22 - 4-January-2022
+- Fix: Improved customizer import process.
+- Fix: Improved import process for Elementor based sites.
+
+v3.0.21 - 3-January-2022
+- Fix: Avoided redirection for Beaver Builder plugin when activated from import screen.
+- Fix: Resolved a few errors with the pre-import PHP compatibility screen.
+
+v3.0.20 - 29-December-2021
+- Fix: Faster import process by deferring image meta processing.
+- Fix: Minor UI fixes.
+
+v3.0.19 - 29-December-2021
+- Fix: Import error due to timeout error for sites where loopback requests are not working.
+- Fix: Styling for default fonts was not working on first load.
+
+v3.0.18 - 28-December-2021
+- Improvement: Added a pre-import screen to notify about incompatible PHP versions for a few plugins.
+- Improvement: Better Color Palettes.
+- Fix: Reset for Color Palette and Typography not working in some cases.
+
+v3.0.17 - 22-December-2021
+- Improvement: More and better color palettes and typography while customizing the demo.
+
+v3.0.16 - 21-December-2021
+- Improvement: Optimised the CartFlows flows import process.
+- Improvement: Added a Required screen prior to import if any system requirements are not met on the user's website.
+- Fix: Fixed an issue with colors not applying to a few Gutenberg-based blocks in WooCommerce demos.
+- Fix: Fixed an issue with White Labeling the import process.
+- Fix: Better import process to avoid errors in import.
+
+v3.0.15 - 15-December-2021
+- Fix: plugin activation errors for starter template using Ultimate Addons for Gutenberg by disabling default redirect from UAG on activation
+- Fix: Rectified typography for template preview.
+
+v3.0.14 - 15-December-2021
+- Improvement: Show complete error message on screen if plugin installation fails.
+- Fix: browser back button does not work in Starter Templates UI.
+
+v3.0.13 - 15-December-2021
+- Improvement: Better error handling for Fatal errors when activating plugins.
+- Improvement: Check for system requirements when before starting to import the website.
+- Fix: Logo width slider not working correctly in case of RTL languages.
+
+v3.0.12 - 14-December-2021
+- Improvement: Added shareable URLs with the added search text.
+- Fix: Fixed an issue while importing CartFlows content.
+- Fix: Fixed an issue with WooCommerce dependency during the plugin activation step.
+- Fix: Removed the unwanted reset functionality when a user with a new website tries to import any demo.
+
+v3.0.11 - 13-December-2021
+- Fix: Fixed an issue where synchronization of the library was not working on sites where CRON was disabled.
+
+v3.0.10 - 11-December-2021
+- Fix: Timeout errors when activating required plugins.
+- Fix: `folder_exists` error when installing required plugins.
+
+v3.0.9 - 10-December-2021
+- Fix: Fixed an issue with resetting posts requests.
+- Fix: Fixed an undefined variable console error with plugin activation request.
+
+v3.0.8 - 10-December-2021
+- Improvement: Added backward screen navigation for welcome and page builders screen.
+- Improvement: Better handling of errors of final import step.
+- Fix: Retry import restricted to maximum 3 times.
+
+v3.0.7 - 9-December-2021
+- Fix: Fixed an issue with import failure when user activates the license for the first time.
+- Fix: Fixed the errors on final import step.
+
+v3.0.6 - 9-December-2021
+- Fix: Plugin installation failed error fixed after retry action.
+- Fix: Removed unused SVG images.
+
+v3.0.5 - 9-December-2021
+- Fix: Import process stopping after the posts are deleted.
+
+v3.0.4 - 8-December-2021
+- Fix: Log the errors reported on the posts delete step during deleting old site.
+
+v3.0.3 - 8-December-2021
+- Fix: Import failing when "Delete Previously imported sites" checkbox is checked.
+
+v3.0.2 - 8-December-2021
+- Fix: Improvised errors for the Site Reset step while importing.
+
+v3.0.1 - 8-December-2021
+- Improvement: Better handling of errors.
+- Fix: Removed extra sub directory from v3.0.0 update.
+
+v3.0.0 - 8-December-2021
+- New: All new user interface to make it easier to select and customize the templates when you are building your website.
+- New: Amazing search to find the template suitable for your needs.
+- New: Ability to try the logo, colors and typography before importing.
+- New: Improved stability. We have improved our importer, which already was very stable. Now after this release, imports will rarely fail.
+- New: Brizy starter templates are deprecated in this release, you will still be able to import Brizy starter templates after you enable option in <code>Settings -> General -> Starter Templates</code>
 
 v2.7.5 - 27-October-2021
 - Fix: Elementor blocks not being imported due to missing required plugins.

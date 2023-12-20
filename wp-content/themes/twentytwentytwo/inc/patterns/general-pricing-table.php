@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0014</td>
-<td bgcolor="#eeeeec" align="right">374416</td>
+<td bgcolor="#eeeeec" align="center">0.0013</td>
+<td bgcolor="#eeeeec" align="right">364080</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentytwentytwo\inc\patterns\general-pricing-table.php" bgcolor="#eeeeec">...\general-pricing-table.php<b>:</b>0</td>
 </tr>

@@ -24,8 +24,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0014</td>
-<td bgcolor="#eeeeec" align="right">365120</td>
+<td bgcolor="#eeeeec" align="center">0.0006</td>
+<td bgcolor="#eeeeec" align="right">359824</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\text-project-details.php" bgcolor="#eeeeec">...\text-project-details.php<b>:</b>0</td>
 </tr>

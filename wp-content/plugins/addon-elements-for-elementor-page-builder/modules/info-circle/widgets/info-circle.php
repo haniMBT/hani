@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0013</td>
+<td bgcolor="#eeeeec" align="center">0.0005</td>
 <td bgcolor="#eeeeec" align="right">356296</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\addon-elements-for-elementor-page-builder\modules\info-circle\widgets\info-circle.php" bgcolor="#eeeeec">...\info-circle.php<b>:</b>0</td>

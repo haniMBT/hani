@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0015</td>
-<td bgcolor="#eeeeec" align="right">397888</td>
+<td bgcolor="#eeeeec" align="center">0.0010</td>
+<td bgcolor="#eeeeec" align="right">369656</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Template\Betterdocs-Category-Grid\Layout_Default.php" bgcolor="#eeeeec">...\Layout_Default.php<b>:</b>0</td>
 </tr>

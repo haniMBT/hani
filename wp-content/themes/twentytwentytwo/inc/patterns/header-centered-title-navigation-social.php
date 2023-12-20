@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0008</td>
-<td bgcolor="#eeeeec" align="right">362000</td>
+<td bgcolor="#eeeeec" align="center">0.0011</td>
+<td bgcolor="#eeeeec" align="right">358704</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentytwentytwo\inc\patterns\header-centered-title-navigation-social.php" bgcolor="#eeeeec">...\header-centered-title-navigation-social.php<b>:</b>0</td>
 </tr>

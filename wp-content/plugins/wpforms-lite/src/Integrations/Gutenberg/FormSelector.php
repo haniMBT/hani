@@ -1,10 +1,10 @@
 <br>
 <font size="1"><table class="xdebug-error xe-uncaught-exception" dir="ltr" border="1" cellspacing="0" cellpadding="1">
 <tr><th align="left" bgcolor="#f57900" colspan="5">
-<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Interface "WPForms\Integrations\IntegrationInterface" not found in C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\src\Integrations\Gutenberg\FormSelector.php on line <i>12</i>
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Interface "WPForms\Integrations\IntegrationInterface" not found in C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\src\Integrations\Gutenberg\FormSelector.php on line <i>16</i>
 </th></tr>
 <tr><th align="left" bgcolor="#f57900" colspan="5">
-<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Error: Interface "WPForms\Integrations\IntegrationInterface" not found in C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\src\Integrations\Gutenberg\FormSelector.php on line <i>12</i>
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Error: Interface "WPForms\Integrations\IntegrationInterface" not found in C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\src\Integrations\Gutenberg\FormSelector.php on line <i>16</i>
 </th></tr>
 <tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
 <tr>
@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0019</td>
-<td bgcolor="#eeeeec" align="right">355832</td>
+<td bgcolor="#eeeeec" align="center">0.0003</td>
+<td bgcolor="#eeeeec" align="right">355896</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\src\Integrations\Gutenberg\FormSelector.php" bgcolor="#eeeeec">...\FormSelector.php<b>:</b>0</td>
 </tr>

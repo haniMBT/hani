@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0057</td>
+<td bgcolor="#eeeeec" align="center">0.0048</td>
 <td bgcolor="#eeeeec" align="right">915832</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\wpforms-lite\libs\sodium_compat\src\Core\Curve25519.php" bgcolor="#eeeeec">...\Curve25519.php<b>:</b>0</td>

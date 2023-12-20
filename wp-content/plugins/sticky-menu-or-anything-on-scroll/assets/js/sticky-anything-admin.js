@@ -1,6 +1,6 @@
 /**
  * Sticky Menu or Anything
- * (c) WebFactory 2021, https://wpsticky.com/
+ * (c) WebFactory 2022, https://wpsticky.com/
  */
 
 jQuery(function ($) {

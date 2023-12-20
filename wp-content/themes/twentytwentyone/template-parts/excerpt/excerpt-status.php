@@ -16,8 +16,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0013</td>
-<td bgcolor="#eeeeec" align="right">356376</td>
+<td bgcolor="#eeeeec" align="center">0.0009</td>
+<td bgcolor="#eeeeec" align="right">356272</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentytwentyone\template-parts\excerpt\excerpt-status.php" bgcolor="#eeeeec">...\excerpt-status.php<b>:</b>0</td>
 </tr>

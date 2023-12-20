@@ -16,21 +16,21 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0014</td>
+<td bgcolor="#eeeeec" align="center">0.0003</td>
 <td bgcolor="#eeeeec" align="right">356336</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\lib\gutenberg-templates\classes\class-ast-block-templates-image-importer.php" bgcolor="#eeeeec">...\class-ast-block-templates-image-importer.php<b>:</b>0</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">2</td>
-<td bgcolor="#eeeeec" align="center">0.0014</td>
+<td bgcolor="#eeeeec" align="center">0.0003</td>
 <td bgcolor="#eeeeec" align="right">356640</td>
 <td bgcolor="#eeeeec">Ast_Block_Templates_Image_Importer::get_instance(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\lib\gutenberg-templates\classes\class-ast-block-templates-image-importer.php" bgcolor="#eeeeec">...\class-ast-block-templates-image-importer.php<b>:</b>268</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">3</td>
-<td bgcolor="#eeeeec" align="center">0.0014</td>
+<td bgcolor="#eeeeec" align="center">0.0003</td>
 <td bgcolor="#eeeeec" align="right">356696</td>
 <td bgcolor="#eeeeec">Ast_Block_Templates_Image_Importer->__construct(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\lib\gutenberg-templates\classes\class-ast-block-templates-image-importer.php" bgcolor="#eeeeec">...\class-ast-block-templates-image-importer.php<b>:</b>52</td>

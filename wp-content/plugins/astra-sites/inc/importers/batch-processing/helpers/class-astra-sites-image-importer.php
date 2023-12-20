@@ -16,21 +16,21 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0016</td>
+<td bgcolor="#eeeeec" align="center">0.0002</td>
 <td bgcolor="#eeeeec" align="right">356272</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-astra-sites-image-importer.php" bgcolor="#eeeeec">...\class-astra-sites-image-importer.php<b>:</b>0</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">2</td>
-<td bgcolor="#eeeeec" align="center">0.0016</td>
+<td bgcolor="#eeeeec" align="center">0.0002</td>
 <td bgcolor="#eeeeec" align="right">356576</td>
 <td bgcolor="#eeeeec">Astra_Sites_Image_Importer::get_instance(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-astra-sites-image-importer.php" bgcolor="#eeeeec">...\class-astra-sites-image-importer.php<b>:</b>278</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">3</td>
-<td bgcolor="#eeeeec" align="center">0.0016</td>
+<td bgcolor="#eeeeec" align="center">0.0002</td>
 <td bgcolor="#eeeeec" align="right">356632</td>
 <td bgcolor="#eeeeec">Astra_Sites_Image_Importer->__construct(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-astra-sites-image-importer.php" bgcolor="#eeeeec">...\class-astra-sites-image-importer.php<b>:</b>54</td>

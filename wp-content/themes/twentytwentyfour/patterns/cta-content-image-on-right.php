@@ -25,8 +25,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0013</td>
-<td bgcolor="#eeeeec" align="right">366200</td>
+<td bgcolor="#eeeeec" align="center">0.0012</td>
+<td bgcolor="#eeeeec" align="right">359984</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\cta-content-image-on-right.php" bgcolor="#eeeeec">...\cta-content-image-on-right.php<b>:</b>0</td>
 </tr>

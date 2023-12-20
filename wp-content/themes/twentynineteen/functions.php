@@ -13,8 +13,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0015</td>
-<td bgcolor="#eeeeec" align="right">401944</td>
+<td bgcolor="#eeeeec" align="center">0.0012</td>
+<td bgcolor="#eeeeec" align="right">368480</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentynineteen\functions.php" bgcolor="#eeeeec">...\functions.php<b>:</b>0</td>
 </tr>
@@ -34,15 +34,15 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0015</td>
-<td bgcolor="#eeeeec" align="right">401944</td>
+<td bgcolor="#eeeeec" align="center">0.0012</td>
+<td bgcolor="#eeeeec" align="right">368480</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentynineteen\functions.php" bgcolor="#eeeeec">...\functions.php<b>:</b>0</td>
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">2</td>
-<td bgcolor="#eeeeec" align="center">0.0042</td>
-<td bgcolor="#eeeeec" align="right">402840</td>
+<td bgcolor="#eeeeec" align="center">0.0041</td>
+<td bgcolor="#eeeeec" align="right">369376</td>
 <td bgcolor="#eeeeec">
 <a href="http://www.php.net/function.version-compare" target="_new">version_compare</a>( <span>$version1 = </span><span>NULL</span>, <span>$version2 = </span><span>&#39;4.7&#39;</span>, <span>$operator = </span><span>&#39;&lt;&#39;</span> )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentynineteen\functions.php" bgcolor="#eeeeec">...\functions.php<b>:</b>15</td>
@@ -66,8 +66,8 @@
 </tr>
 <tr>
 <td bgcolor="#eeeeec" align="center">1</td>
-<td bgcolor="#eeeeec" align="center">0.0015</td>
-<td bgcolor="#eeeeec" align="right">401944</td>
+<td bgcolor="#eeeeec" align="center">0.0012</td>
+<td bgcolor="#eeeeec" align="right">368480</td>
 <td bgcolor="#eeeeec">{main}(  )</td>
 <td title="C:\wamp86\www\wordpress\wp-content\themes\twentynineteen\functions.php" bgcolor="#eeeeec">...\functions.php<b>:</b>0</td>
 </tr>
