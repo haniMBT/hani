@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôtel Bellevue - Séjour d'Exception</title>
+    <meta name="description" content="Hôtel Bellevue - Hôtel de charme 4 étoiles avec vue panoramique, spa et restaurant gastronomique.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'hotel-gold': '#d97706',
+                        'hotel-blue': '#0ea5e9',
+                        'hotel-green': '#059669'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-hotel-gold text-white rounded-lg flex items-center justify-center">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="font-display font-bold text-xl text-hotel-gold">
+                        Hôtel Bellevue
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-hotel-gold transition-colors">Accueil</a>
+                    <a href="#chambres" class="text-gray-700 hover:text-hotel-gold transition-colors">Chambres</a>
+                    <a href="#services" class="text-gray-700 hover:text-hotel-gold transition-colors">Services</a>
+                    <a href="#restaurant" class="text-gray-700 hover:text-hotel-gold transition-colors">Restaurant</a>
+                    <a href="#contact" class="text-gray-700 hover:text-hotel-gold transition-colors">Contact</a>
+                </div>
+                <button class="bg-hotel-blue text-white px-6 py-2 rounded-lg hover:bg-sky-600 transition-colors">
+                    Réserver
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-orange-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="flex text-hotel-gold">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-600">Hôtel 4 étoiles</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-6">
+                        Séjour
+                        <span class="text-hotel-gold">d'Exception</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Découvrez l'art de vivre à la française dans notre hôtel de charme. Vue panoramique, service personnalisé et raffinement absolu.
+                    </p>
+                    
+                    <!-- Booking Widget -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+                        <h3 class="text-lg font-semibold mb-4">Réservation</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-1">Arrivée</label>
+                                <input type="date" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-1">Départ</label>
+                                <input type="date" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-1">Adultes</label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <div class="flex items-end">
+                                <button class="w-full bg-hotel-gold text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition-colors">
+                                    Chercher
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-hotel-gold text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
+                            Découvrir nos chambres
+                        </button>
+                        <button class="border-2 border-hotel-blue text-hotel-blue px-8 py-3 rounded-lg font-semibold hover:bg-hotel-blue hover:text-white transition-all">
+                            Visite virtuelle
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hôtel Bellevue" class="rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="chambres" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Nos Chambres</h2>
+                <p class="text-xl text-gray-600">Confort et élégance dans chaque détail</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-64 bg-gradient-to-r from-hotel-gold to-orange-500"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold">Chambre Classique</h3>
+                            <div class="text-hotel-gold">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">25 m² • Vue jardin • Lit queen size • Salle de bain avec douche</p>
+                        <ul class="text-gray-600 space-y-1 mb-6 text-sm">
+                            <li><i class="fas fa-wifi text-hotel-gold mr-2"></i>WiFi gratuit</li>
+                            <li><i class="fas fa-tv text-hotel-gold mr-2"></i>TV écran plat</li>
+                            <li><i class="fas fa-snowflake text-hotel-gold mr-2"></i>Climatisation</li>
+                            <li><i class="fas fa-coffee text-hotel-gold mr-2"></i>Minibar</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-hotel-gold">120€</span>
+                                <span class="text-gray-500">/nuit</span>
+                            </div>
+                            <button class="bg-hotel-blue text-white px-4 py-2 rounded-lg hover:bg-sky-600 transition-colors">
+                                Réserver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-64 bg-gradient-to-r from-hotel-blue to-sky-500"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold">Chambre Supérieure</h3>
+                            <div class="text-hotel-gold">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">35 m² • Vue mer • Lit king size • Salle de bain avec baignoire</p>
+                        <ul class="text-gray-600 space-y-1 mb-6 text-sm">
+                            <li><i class="fas fa-wifi text-hotel-gold mr-2"></i>WiFi gratuit</li>
+                            <li><i class="fas fa-tv text-hotel-gold mr-2"></i>TV écran plat</li>
+                            <li><i class="fas fa-hot-tub text-hotel-gold mr-2"></i>Jacuzzi privé</li>
+                            <li><i class="fas fa-glass-cheers text-hotel-gold mr-2"></i>Minibar premium</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-hotel-gold">180€</span>
+                                <span class="text-gray-500">/nuit</span>
+                            </div>
+                            <button class="bg-hotel-blue text-white px-4 py-2 rounded-lg hover:bg-sky-600 transition-colors">
+                                Réserver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-64 bg-gradient-to-r from-purple-500 to-hotel-gold"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold">Suite Présidentielle</h3>
+                            <div class="text-hotel-gold">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">80 m² • Vue panoramique • Salon séparé • Terrasse privée</p>
+                        <ul class="text-gray-600 space-y-1 mb-6 text-sm">
+                            <li><i class="fas fa-concierge-bell text-hotel-gold mr-2"></i>Service concierge</li>
+                            <li><i class="fas fa-car text-hotel-gold mr-2"></i>Transfert inclus</li>
+                            <li><i class="fas fa-spa text-hotel-gold mr-2"></i>Accès spa</li>
+                            <li><i class="fas fa-utensils text-hotel-gold mr-2"></i>Room service 24h</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-hotel-gold">450€</span>
+                                <span class="text-gray-500">/nuit</span>
+                            </div>
+                            <button class="bg-hotel-blue text-white px-4 py-2 rounded-lg hover:bg-sky-600 transition-colors">
+                                Réserver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Services Premium</h2>
+                <p class="text-xl text-gray-600">Votre bien-être est notre priorité</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-hotel-gold text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-spa text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Spa & Wellness</h3>
+                    <p class="text-gray-600">Centre de bien-être avec piscine intérieure, sauna et hammam</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-hotel-blue text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-utensils text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Restaurant</h3>
+                    <p class="text-gray-600">Cuisine gastronomique avec terrasse panoramique et vue mer</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-hotel-green text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-dumbbell text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Fitness</h3>
+                    <p class="text-gray-600">Salle de sport équipée 24h/24 avec coach personnel</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-concierge-bell text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Conciergerie</h3>
+                    <p class="text-gray-600">Service personnalisé pour organiser vos activités et sorties</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section id="restaurant" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-display font-bold text-gray-900 mb-6">Restaurant Le Panorama</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Notre chef étoilé vous propose une cuisine créative mêlant tradition française et influences méditerranéennes, dans un cadre d'exception avec vue panoramique.
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-hotel-gold text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Chef étoilé</h4>
+                                <p class="text-gray-600">Cuisine gastronomique reconnue</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-hotel-blue text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-wine-glass"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Cave exceptionnelle</h4>
+                                <p class="text-gray-600">Plus de 300 références</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-hotel-green text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Produits locaux</h4>
+                                <p class="text-gray-600">Circuit court et bio</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <button class="bg-hotel-gold text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors">
+                            Voir la carte
+                        </button>
+                        <button class="border-2 border-hotel-gold text-hotel-gold px-6 py-3 rounded-lg hover:bg-hotel-gold hover:text-white transition-all">
+                            Réserver une table
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant" class="rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Nous Contacter</h2>
+                <p class="text-xl text-gray-600">Notre équipe est à votre disposition</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Informations Pratiques</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-hotel-gold text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Réception</h4>
+                                <p class="text-gray-600">24h/24 - 7j/7</p>
+                                <p class="text-gray-600">Service en continu</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-hotel-blue text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Téléphone</h4>
+                                <p class="text-gray-600">+33 (0)4 93 12 34 56</p>
+                                <p class="text-gray-600 text-sm">Réservations: +33 (0)4 93 12 34 57</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-hotel-green text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">contact@hotel-bellevue.fr</p>
+                                <p class="text-gray-600 text-sm">reservation@hotel-bellevue.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-purple-600 text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Adresse</h4>
+                                <p class="text-gray-600">123 Promenade des Anglais<br>06000 Nice, France</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Awards -->
+                    <div class="mt-8 p-6 bg-gray-50 rounded-xl">
+                        <h4 class="font-semibold mb-4">Récompenses</h4>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div>
+                                <div class="text-hotel-gold text-2xl mb-2">★★★★</div>
+                                <p class="text-sm text-gray-600">Hôtel 4 étoiles</p>
+                            </div>
+                            <div>
+                                <div class="text-hotel-gold text-2xl mb-2">🏆</div>
+                                <p class="text-sm text-gray-600">TripAdvisor Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-6">Demande d'information</h3>
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Nom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-hotel-gold focus:border-transparent">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-hotel-gold focus:border-transparent">
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="date" placeholder="Date d'arrivée" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-hotel-gold focus:border-transparent">
+                            <input type="date" placeholder="Date de départ" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-hotel-gold focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-hotel-gold focus:border-transparent">
+                                <option>Type de demande</option>
+                                <option>Réservation chambre</option>
+                                <option>Réservation restaurant</option>
+                                <option>Événement privé</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-hotel-gold focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-hotel-gold text-white py-3 px-6 rounded-lg font-medium hover:bg-orange-600 transition-colors">
+                            Envoyer la demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 bg-hotel-gold text-white rounded-lg flex items-center justify-center">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="font-display font-bold text-2xl">Hôtel Bellevue</div>
+                </div>
+                <p class="text-gray-400 mb-6">L'art de recevoir à la française</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-tripadvisor text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-booking-com text-xl"></i></a>
+                </div>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400">&copy; 2024 Hôtel Bellevue. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Date picker minimum date
+        const today = new Date().toISOString().split('T')[0];
+        document.querySelectorAll('input[type="date"]').forEach(input => {
+            input.min = today;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairie de Bellevue - Site Officiel</title>
+    <meta name="description" content="Site officiel de la Mairie de Bellevue - Services municipaux, actualités et démarches en ligne.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mairie-blue': '#1e40af',
+                        'mairie-red': '#dc2626',
+                        'mairie-gold': '#d97706'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Marianne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-official { font-family: 'Marianne', sans-serif; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Top Banner -->
+    <div class="bg-mairie-blue text-white py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center text-sm">
+                <div class="flex items-center space-x-4">
+                    <span><i class="fas fa-flag mr-1"></i>République Française</span>
+                    <span><i class="fas fa-balance-scale mr-1"></i>Liberté • Égalité • Fraternité</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span><i class="fas fa-phone mr-1"></i>01 23 45 67 89</span>
+                    <span><i class="fas fa-envelope mr-1"></i>mairie@bellevue.fr</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Coat_of_arms_of_France.svg/1200px-Coat_of_arms_of_France.svg.png" alt="Blason" class="w-8 h-8">
+                    <div>
+                        <div class="font-official font-bold text-mairie-blue">Mairie de Bellevue</div>
+                        <div class="text-xs text-gray-600">Commune de Seine-Saint-Denis</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-mairie-blue transition-colors">Accueil</a>
+                    <a href="#services" class="text-gray-700 hover:text-mairie-blue transition-colors">Services</a>
+                    <a href="#actualites" class="text-gray-700 hover:text-mairie-blue transition-colors">Actualités</a>
+                    <a href="#vie-pratique" class="text-gray-700 hover:text-mairie-blue transition-colors">Vie Pratique</a>
+                    <a href="#contact" class="text-gray-700 hover:text-mairie-blue transition-colors">Contact</a>
+                </div>
+                <button class="bg-mairie-red text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                    Urgences
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-mairie-blue to-blue-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-official font-bold mb-6">
+                        Bienvenue à
+                        <span class="text-yellow-300">Bellevue</span>
+                    </h1>
+                    <p class="text-xl mb-8">
+                        Votre mairie au service des citoyens. Retrouvez tous vos services municipaux, actualités et démarches administratives en ligne.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-mairie-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            Services en ligne
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-mairie-blue transition-all">
+                            Prendre rendez-vous
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hôtel de ville" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md hover-scale text-center">
+                    <div class="w-16 h-16 bg-mairie-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-id-card text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">État Civil</h3>
+                    <p class="text-gray-600 text-sm mb-4">Actes de naissance, mariage, décès</p>
+                    <button class="text-mairie-blue font-medium hover:underline">Accéder</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover-scale text-center">
+                    <div class="w-16 h-16 bg-mairie-red text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-home text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Urbanisme</h3>
+                    <p class="text-gray-600 text-sm mb-4">Permis de construire, autorisations</p>
+                    <button class="text-mairie-blue font-medium hover:underline">Accéder</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover-scale text-center">
+                    <div class="w-16 h-16 bg-mairie-gold text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Écoles</h3>
+                    <p class="text-gray-600 text-sm mb-4">Inscriptions scolaires, cantines</p>
+                    <button class="text-mairie-blue font-medium hover:underline">Accéder</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover-scale text-center">
+                    <div class="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Rendez-vous</h3>
+                    <p class="text-gray-600 text-sm mb-4">Prendre rendez-vous en ligne</p>
+                    <button class="text-mairie-blue font-medium hover:underline">Accéder</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-official font-bold text-gray-900 mb-4">Services Municipaux</h2>
+                <p class="text-xl text-gray-600">Tous vos services administratifs en un clic</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale">
+                    <div class="w-16 h-16 bg-mairie-blue text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Démarches Administratives</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Cartes d'identité</li>
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Passeports</li>
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Cartes grises</li>
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Certificats divers</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale">
+                    <div class="w-16 h-16 bg-green-600 text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Environnement</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Collecte des déchets</li>
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Espaces verts</li>
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Développement durable</li>
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Propreté urbaine</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale">
+                    <div class="w-16 h-16 bg-mairie-gold text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Vie Sociale</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>CCAS</li>
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Petite enfance</li>
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Personnes âgées</li>
+                        <li><i class="fas fa-check text-mairie-blue mr-2"></i>Associations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="actualites" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-official font-bold text-gray-900 mb-4">Actualités</h2>
+                <p class="text-xl text-gray-600">Les dernières nouvelles de votre commune</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-mairie-blue to-blue-600"></div>
+                    <div class="p-6">
+                        <div class="text-sm text-mairie-blue font-medium mb-2">15 Mars 2024</div>
+                        <h3 class="text-xl font-semibold mb-3">Rénovation du centre-ville</h3>
+                        <p class="text-gray-600 mb-4">Début des travaux de réaménagement de la place centrale pour améliorer la circulation et créer plus d'espaces verts.</p>
+                        <a href="#" class="text-mairie-blue font-medium hover:underline">Lire la suite →</a>
+                    </div>
+                </article>
+                
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-green-500 to-green-600"></div>
+                    <div class="p-6">
+                        <div class="text-sm text-mairie-blue font-medium mb-2">10 Mars 2024</div>
+                        <h3 class="text-xl font-semibold mb-3">Nouvelle aire de jeux</h3>
+                        <p class="text-gray-600 mb-4">Inauguration de la nouvelle aire de jeux du parc municipal, équipée d'installations modernes et sécurisées.</p>
+                        <a href="#" class="text-mairie-blue font-medium hover:underline">Lire la suite →</a>
+                    </div>
+                </article>
+                
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-mairie-gold to-orange-600"></div>
+                    <div class="p-6">
+                        <div class="text-sm text-mairie-blue font-medium mb-2">5 Mars 2024</div>
+                        <h3 class="text-xl font-semibold mb-3">Festival de printemps</h3>
+                        <p class="text-gray-600 mb-4">Préparez-vous pour le festival annuel de printemps qui aura lieu le 20 avril avec de nombreuses animations.</p>
+                        <a href="#" class="text-mairie-blue font-medium hover:underline">Lire la suite →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Info Section -->
+    <section id="vie-pratique" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-official font-bold text-gray-900 mb-4">Vie Pratique</h2>
+                <p class="text-xl text-gray-600">Informations utiles pour les habitants</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Horaires d'ouverture</h3>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <span class="font-medium">Lundi - Mercredi</span>
+                                <span>8h30 - 12h00 / 13h30 - 17h30</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Jeudi</span>
+                                <span>8h30 - 12h00 / 13h30 - 19h00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Vendredi</span>
+                                <span>8h30 - 12h00 / 13h30 - 16h30</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Samedi</span>
+                                <span>9h00 - 12h00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-medium">Dimanche</span>
+                                <span class="text-mairie-red">Fermé</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Numéros Utiles</h3>
+                    <div class="space-y-4">
+                        <div class="bg-mairie-red text-white p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold">Urgences</span>
+                                <span class="text-2xl font-bold">112</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span>Police Municipale</span>
+                                <span class="font-semibold">01 23 45 67 80</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span>Services Techniques</span>
+                                <span class="font-semibold">01 23 45 67 81</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span>CCAS</span>
+                                <span class="font-semibold">01 23 45 67 82</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-official font-bold text-gray-900 mb-4">Nous Contacter</h2>
+                <p class="text-xl text-gray-600">Votre mairie à votre écoute</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Coordonnées</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-mairie-blue text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Adresse</h4>
+                                <p class="text-gray-600">1 Place de la République<br>93270 Bellevue</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-mairie-blue text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Téléphone</h4>
+                                <p class="text-gray-600">01 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-mairie-blue text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">mairie@bellevue.fr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-6">Nous écrire</h3>
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Nom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mairie-blue focus:border-transparent">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mairie-blue focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mairie-blue focus:border-transparent">
+                                <option>Sujet de votre demande</option>
+                                <option>État civil</option>
+                                <option>Urbanisme</option>
+                                <option>Environnement</option>
+                                <option>Autres</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mairie-blue focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-mairie-blue text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Coat_of_arms_of_France.svg/1200px-Coat_of_arms_of_France.svg.png" alt="Blason" class="w-8 h-8">
+                        <div class="font-official font-bold text-xl">Mairie de Bellevue</div>
+                    </div>
+                    <p class="text-gray-400">Au service des citoyens depuis 1895</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Liens Utiles</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Service Public</a></li>
+                        <li><a href="#" class="hover:text-white">Préfecture</a></li>
+                        <li><a href="#" class="hover:text-white">Conseil Départemental</a></li>
+                        <li><a href="#" class="hover:text-white">Région Île-de-France</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Mairie de Bellevue. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

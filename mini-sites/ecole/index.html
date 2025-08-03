@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>École Primaire Les Petits Explorateurs</title>
+    <meta name="description" content="École primaire Les Petits Explorateurs - Éducation bienveillante et épanouissement de chaque enfant.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'school-blue': '#3b82f6',
+                        'school-green': '#10b981',
+                        'school-purple': '#8b5cf6',
+                        'school-orange': '#f59e0b'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fredoka+One:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Fredoka One', cursive; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-school-blue to-school-purple text-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="font-display text-xl text-school-blue">
+                        Les Petits Explorateurs
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-school-blue transition-colors">Accueil</a>
+                    <a href="#about" class="text-gray-700 hover:text-school-blue transition-colors">À propos</a>
+                    <a href="#programs" class="text-gray-700 hover:text-school-blue transition-colors">Programmes</a>
+                    <a href="#activities" class="text-gray-700 hover:text-school-blue transition-colors">Activités</a>
+                    <a href="#contact" class="text-gray-700 hover:text-school-blue transition-colors">Contact</a>
+                </div>
+                <button class="bg-school-green text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors">
+                    Inscription
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-purple-50 to-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-display text-gray-900 mb-6">
+                        Bienvenue chez les
+                        <span class="text-school-blue">Petits Explorateurs</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Une école où chaque enfant grandit, apprend et s'épanouit dans un environnement bienveillant et stimulant.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-school-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                            Découvrir l'école
+                        </button>
+                        <button class="border-2 border-school-green text-school-green px-8 py-3 rounded-lg font-semibold hover:bg-school-green hover:text-white transition-all">
+                            Demande d'inscription
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-school-blue/20 rounded-3xl p-6 hover-scale">
+                            <i class="fas fa-book text-4xl text-school-blue mb-4"></i>
+                            <h3 class="font-semibold text-lg">Apprentissage</h3>
+                        </div>
+                        <div class="bg-school-green/20 rounded-3xl p-6 hover-scale mt-8">
+                            <i class="fas fa-palette text-4xl text-school-green mb-4"></i>
+                            <h3 class="font-semibold text-lg">Créativité</h3>
+                        </div>
+                        <div class="bg-school-purple/20 rounded-3xl p-6 hover-scale -mt-8">
+                            <i class="fas fa-users text-4xl text-school-purple mb-4"></i>
+                            <h3 class="font-semibold text-lg">Socialisation</h3>
+                        </div>
+                        <div class="bg-school-orange/20 rounded-3xl p-6 hover-scale">
+                            <i class="fas fa-rocket text-4xl text-school-orange mb-4"></i>
+                            <h3 class="font-semibold text-lg">Innovation</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display text-gray-900 mb-4">Notre Mission</h2>
+                <p class="text-xl text-gray-600">Accompagner chaque enfant vers la réussite</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-school-blue text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Bienveillance</h3>
+                    <p class="text-gray-600">Un environnement chaleureux où chaque enfant se sent en sécurité pour apprendre et grandir.</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-school-green text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Innovation</h3>
+                    <p class="text-gray-600">Méthodes pédagogiques modernes adaptées aux besoins de chaque élève.</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-school-purple text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-trophy text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Excellence</h3>
+                    <p class="text-gray-600">Accompagnement personnalisé pour révéler le potentiel de chaque enfant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display text-gray-900 mb-4">Nos Programmes</h2>
+                <p class="text-xl text-gray-600">Cursus adapté à chaque niveau</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-school-blue text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-baby text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Maternelle</h3>
+                    <p class="text-gray-600 mb-4">Éveil, socialisation et premiers apprentissages dans un cadre ludique.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-school-green mr-2"></i>3-6 ans</li>
+                        <li><i class="fas fa-check text-school-green mr-2"></i>Apprentissage par le jeu</li>
+                        <li><i class="fas fa-check text-school-green mr-2"></i>Développement moteur</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-school-green text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-child text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Primaire</h3>
+                    <p class="text-gray-600 mb-4">Fondamentaux solides et ouverture sur le monde.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-school-green mr-2"></i>6-11 ans</li>
+                        <li><i class="fas fa-check text-school-green mr-2"></i>Français, Maths, Sciences</li>
+                        <li><i class="fas fa-check text-school-green mr-2"></i>Langues étrangères</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-school-purple text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Soutien</h3>
+                    <p class="text-gray-600 mb-4">Accompagnement personnalisé pour la réussite de tous.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-school-green mr-2"></i>Aide aux devoirs</li>
+                        <li><i class="fas fa-check text-school-green mr-2"></i>Remédiation</li>
+                        <li><i class="fas fa-check text-school-green mr-2"></i>Accompagnement spécialisé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display text-gray-900 mb-4">Activités Extrascolaires</h2>
+                <p class="text-xl text-gray-600">Épanouissement à travers la diversité</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center hover-scale">
+                    <div class="w-24 h-24 bg-gradient-to-r from-school-blue to-school-purple text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-music text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Musique</h3>
+                    <p class="text-gray-600">Éveil musical et apprentissage d'instruments</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-24 h-24 bg-gradient-to-r from-school-green to-school-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-running text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Sport</h3>
+                    <p class="text-gray-600">Activités sportives variées et éducation physique</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-24 h-24 bg-gradient-to-r from-school-purple to-school-orange text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-palette text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Arts</h3>
+                    <p class="text-gray-600">Expression artistique et créativité</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-24 h-24 bg-gradient-to-r from-school-orange to-school-green text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Numérique</h3>
+                    <p class="text-gray-600">Initiation au codage et outils numériques</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display text-gray-900 mb-4">Nous Contacter</h2>
+                <p class="text-xl text-gray-600">Rejoignez notre famille éducative</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Informations Pratiques</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-school-blue text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Horaires d'accueil</h4>
+                                <p class="text-gray-600">Lun-Ven: 7h30 - 18h30</p>
+                                <p class="text-gray-600">Cours: 8h30 - 16h30</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-school-green text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Téléphone</h4>
+                                <p class="text-gray-600">01 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-school-purple text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">contact@petitsexplorateurs.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-school-orange text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Adresse</h4>
+                                <p class="text-gray-600">25 Avenue de l'Éducation<br>75000 Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-6">Demande d'information</h3>
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Nom du parent" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-school-blue focus:border-transparent">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-school-blue focus:border-transparent">
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Prénom de l'enfant" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-school-blue focus:border-transparent">
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-school-blue focus:border-transparent">
+                                <option>Niveau souhaité</option>
+                                <option>Petite section</option>
+                                <option>Moyenne section</option>
+                                <option>Grande section</option>
+                                <option>CP</option>
+                                <option>CE1</option>
+                                <option>CE2</option>
+                                <option>CM1</option>
+                                <option>CM2</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-school-blue focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-school-blue text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-600 transition-colors">
+                            Envoyer la demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 bg-gradient-to-r from-school-blue to-school-purple text-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="font-display text-2xl">Les Petits Explorateurs</div>
+                </div>
+                <p class="text-gray-400 mb-6">École primaire - Éducation bienveillante</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                </div>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400">&copy; 2024 École Les Petits Explorateurs. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

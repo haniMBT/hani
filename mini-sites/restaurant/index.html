@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Bistrot Gourmand - Restaurant</title>
+    <meta name="description" content="Le Bistrot Gourmand - Restaurant français traditionnel avec une cuisine raffinée et des produits frais.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'restaurant-gold': '#d97706',
+                        'restaurant-dark': '#92400e',
+                        'restaurant-cream': '#fef3c7'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-display font-bold text-2xl text-restaurant-dark">
+                    Le Bistrot Gourmand
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-restaurant-gold transition-colors">Accueil</a>
+                    <a href="#menu" class="text-gray-700 hover:text-restaurant-gold transition-colors">Menu</a>
+                    <a href="#about" class="text-gray-700 hover:text-restaurant-gold transition-colors">À propos</a>
+                    <a href="#reservation" class="text-gray-700 hover:text-restaurant-gold transition-colors">Réservation</a>
+                </div>
+                <button class="bg-restaurant-gold text-white px-6 py-2 rounded-lg hover:bg-restaurant-dark transition-colors">
+                    Réserver
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-restaurant-cream to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-6">
+                        Une expérience
+                        <span class="text-restaurant-gold">culinaire</span>
+                        inoubliable
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Découvrez notre cuisine française traditionnelle revisitée avec des produits frais et de saison dans une ambiance chaleureuse.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-restaurant-gold text-white px-8 py-3 rounded-lg font-semibold hover:bg-restaurant-dark transition-colors">
+                            Voir le menu
+                        </button>
+                        <button class="border-2 border-restaurant-gold text-restaurant-gold px-8 py-3 rounded-lg font-semibold hover:bg-restaurant-gold hover:text-white transition-all">
+                            Réserver une table
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant ambiance" class="rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Notre Menu</h2>
+                <p class="text-xl text-gray-600">Saveurs authentiques et créativité culinaire</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Entrées -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-display font-bold text-restaurant-dark mb-6 text-center">Entrées</h3>
+                    <div class="space-y-6">
+                        <div class="border-b border-gray-100 pb-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-lg">Foie gras mi-cuit</h4>
+                                <span class="text-restaurant-gold font-bold">24€</span>
+                            </div>
+                            <p class="text-gray-600">Compotée de figues et pain brioche toasté</p>
+                        </div>
+                        
+                        <div class="border-b border-gray-100 pb-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-lg">Escargots de Bourgogne</h4>
+                                <span class="text-restaurant-gold font-bold">18€</span>
+                            </div>
+                            <p class="text-gray-600">Beurre à l'ail et persil frais</p>
+                        </div>
+                        
+                        <div class="border-b border-gray-100 pb-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-lg">Tartare de saumon</h4>
+                                <span class="text-restaurant-gold font-bold">22€</span>
+                            </div>
+                            <p class="text-gray-600">Avocat, citron vert et toast de seigle</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Plats -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-display font-bold text-restaurant-dark mb-6 text-center">Plats Principaux</h3>
+                    <div class="space-y-6">
+                        <div class="border-b border-gray-100 pb-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-lg">Bœuf bourguignon</h4>
+                                <span class="text-restaurant-gold font-bold">32€</span>
+                            </div>
+                            <p class="text-gray-600">Mijoté aux légumes de saison, purée maison</p>
+                        </div>
+                        
+                        <div class="border-b border-gray-100 pb-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-lg">Sole meunière</h4>
+                                <span class="text-restaurant-gold font-bold">38€</span>
+                            </div>
+                            <p class="text-gray-600">Beurre noisette, pommes vapeur persillées</p>
+                        </div>
+                        
+                        <div class="border-b border-gray-100 pb-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-lg">Magret de canard</h4>
+                                <span class="text-restaurant-gold font-bold">35€</span>
+                            </div>
+                            <p class="text-gray-600">Sauce aux cerises, gratin dauphinois</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-display font-bold text-gray-900 mb-6">Notre Histoire</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Depuis 1985, Le Bistrot Gourmand perpétue la tradition de la cuisine française avec passion et authenticité. Notre chef, formé dans les plus grandes maisons, propose une cuisine généreuse et raffinée.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Nous privilégions les produits locaux et de saison pour vous offrir le meilleur de notre terroir dans un cadre chaleureux et convivial.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-8 text-center">
+                        <div>
+                            <div class="text-3xl font-bold text-restaurant-gold mb-2">35+</div>
+                            <div class="text-gray-600">Années d'expérience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-restaurant-gold mb-2">5000+</div>
+                            <div class="text-gray-600">Clients satisfaits</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-restaurant-gold mb-2">★★★★★</div>
+                            <div class="text-gray-600">Note moyenne</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1577308856961-8e4678b26097?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chef cuisine" class="rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-restaurant-cream/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Réservation</h2>
+                <p class="text-xl text-gray-600">Réservez votre table pour une expérience inoubliable</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Informations Pratiques</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-restaurant-gold text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Horaires</h4>
+                                <p class="text-gray-600">Mar-Dim: 12h-14h & 19h-22h</p>
+                                <p class="text-gray-600">Fermé le lundi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-restaurant-dark text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Téléphone</h4>
+                                <p class="text-gray-600">01 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-restaurant-gold text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Adresse</h4>
+                                <p class="text-gray-600">15 Rue de la Gastronomie<br>75001 Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-6">Réserver une table</h3>
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Nom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-restaurant-gold focus:border-transparent">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-restaurant-gold focus:border-transparent">
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-restaurant-gold focus:border-transparent">
+                            <input type="time" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-restaurant-gold focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-restaurant-gold focus:border-transparent">
+                                <option>Nombre de personnes</option>
+                                <option>1 personne</option>
+                                <option>2 personnes</option>
+                                <option>3 personnes</option>
+                                <option>4 personnes</option>
+                                <option>5+ personnes</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Demandes spéciales (allergies, anniversaire...)" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-restaurant-gold focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-restaurant-gold text-white py-3 px-6 rounded-lg font-medium hover:bg-restaurant-dark transition-colors">
+                            Confirmer la réservation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-restaurant-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="font-display font-bold text-3xl mb-4">Le Bistrot Gourmand</div>
+                <p class="text-orange-200 mb-6">Restaurant français traditionnel</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-orange-200 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-orange-200 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-orange-200 hover:text-white"><i class="fab fa-tripadvisor text-xl"></i></a>
+                </div>
+                <div class="border-t border-orange-700 pt-8">
+                    <p class="text-orange-200">&copy; 2024 Le Bistrot Gourmand. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
