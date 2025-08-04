@@ -5,7 +5,7 @@
 	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
 		<!-- wp:image {"width":"40px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
 		<figure class="wp-block-image size-full is-resized">
-			<img src="https://hanimbt.github.io/hani/wp-content/themes/twentytwentyfour/patterns/<br />_<font size='1'><table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>_<tr><th align='left' bgcolor='#f57900' colspan="><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\footer-colophon-3-col.php on line <i>16</i>
+			<img src="https://hanimbt.github.io/hani/1/2/3/wp-content/themes/twentytwentyfour/patterns/<br />_<font size='1'><table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>_<tr><th align='left' bgcolor='#f57900' colspan="><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\footer-colophon-3-col.php on line <i>16</i>
 <tr><th align="left" bgcolor="#f57900" colspan="5">
 <span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\themes\twentytwentyfour\patterns\footer-colophon-3-col.php on line <i>16</i>
 </th></tr>

@@ -3,7 +3,7 @@
         <div class="eael-grid">
             <div class="eael-col">
                 <div class="eael-block p30 eael-welcome__card mb30">
-                    <img src="https://hanimbt.github.io/hani/wp-content/plugins/essential-addons-for-elementor-lite/includes/templates/admin/<br />_<font size='1'><table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>_<tr><th align='left' bgcolor='#f57900' colspan="><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\templates\admin\go-pro.php on line <i>6</i>
+                    <img src="https://hanimbt.github.io/hani/1/2/3/wp-content/plugins/essential-addons-for-elementor-lite/includes/templates/admin/<br />_<font size='1'><table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>_<tr><th align='left' bgcolor='#f57900' colspan="><span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\templates\admin\go-pro.php on line <i>6</i>
 <tr><th align="left" bgcolor="#f57900" colspan="5">
 <span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Error: Call to undefined function esc_url() in C:\wamp86\www\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\templates\admin\go-pro.php on line <i>6</i>
 </th></tr>
