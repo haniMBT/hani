@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre Culturel Les Arts - Programmation & Événements</title>
+    <meta name="description" content="Centre Culturel Les Arts - Théâtre, concerts, expositions et ateliers artistiques pour tous les âges.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'culture-purple': '#8b5cf6',
+                        'culture-pink': '#ec4899',
+                        'culture-orange': '#f59e0b',
+                        'culture-teal': '#14b8a6'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+        .gradient-bg { background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f59e0b 100%); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 gradient-bg text-white rounded-lg flex items-center justify-center">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <div class="font-display font-bold text-xl text-culture-purple">
+                        Centre Culturel Les Arts
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-culture-purple transition-colors">Accueil</a>
+                    <a href="#programmation" class="text-gray-700 hover:text-culture-purple transition-colors">Programmation</a>
+                    <a href="#espaces" class="text-gray-700 hover:text-culture-purple transition-colors">Espaces</a>
+                    <a href="#ateliers" class="text-gray-700 hover:text-culture-purple transition-colors">Ateliers</a>
+                    <a href="#contact" class="text-gray-700 hover:text-culture-purple transition-colors">Contact</a>
+                </div>
+                <button class="bg-culture-pink text-white px-6 py-2 rounded-lg hover:bg-pink-600 transition-colors">
+                    Billetterie
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-display font-bold mb-6">
+                    L'Art au
+                    <span class="text-yellow-300">Cœur</span>
+                    de la Ville
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                    Théâtre, musique, danse, expositions... Découvrez une programmation riche et variée pour tous les publics.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-culture-purple px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Voir la programmation
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-culture-purple transition-all">
+                        S'inscrire aux ateliers
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Prochains Événements</h2>
+                <p class="text-xl text-gray-600">Ne manquez pas nos spectacles à venir</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-culture-purple to-culture-pink"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-culture-purple text-white px-3 py-1 rounded-full text-sm">Théâtre</span>
+                            <span class="text-gray-500">20 Mars</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Hamlet</h3>
+                        <p class="text-gray-600 mb-4">Adaptation moderne du chef-d'œuvre de Shakespeare par la compagnie Théâtre Nouveau.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-culture-purple font-semibold">À partir de 25€</span>
+                            <button class="bg-culture-purple text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors">
+                                Réserver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-culture-teal to-culture-orange"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-culture-teal text-white px-3 py-1 rounded-full text-sm">Concert</span>
+                            <span class="text-gray-500">25 Mars</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Jazz Night</h3>
+                        <p class="text-gray-600 mb-4">Soirée jazz avec le quartet de Marie Dubois, une immersion dans l'univers du jazz moderne.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-culture-purple font-semibold">À partir de 18€</span>
+                            <button class="bg-culture-purple text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors">
+                                Réserver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-culture-pink to-culture-orange"></div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-culture-pink text-white px-3 py-1 rounded-full text-sm">Exposition</span>
+                            <span class="text-gray-500">1-30 Avril</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Art Contemporain</h3>
+                        <p class="text-gray-600 mb-4">Exposition collective d'artistes locaux explorant les thèmes de l'identité urbaine.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-culture-purple font-semibold">Entrée libre</span>
+                            <button class="bg-culture-purple text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors">
+                                En savoir +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming Section -->
+    <section id="programmation" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Notre Programmation</h2>
+                <p class="text-xl text-gray-600">Diversité artistique et excellence culturelle</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-culture-purple text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-theater-masks text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Théâtre</h3>
+                    <p class="text-gray-600">Classique, contemporain, jeune public - toutes les formes théâtrales représentées</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-culture-teal text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-music text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Concerts</h3>
+                    <p class="text-gray-600">Jazz, classique, world music - une programmation musicale éclectique</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-culture-pink text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-palette text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Expositions</h3>
+                    <p class="text-gray-600">Art contemporain, photographie, arts plastiques dans nos galeries</p>
+                </div>
+                
+                <div class="text-center hover-scale">
+                    <div class="w-20 h-20 bg-culture-orange text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-graduate text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Ateliers</h3>
+                    <p class="text-gray-600">Cours et stages pour développer votre créativité artistique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spaces Section -->
+    <section id="espaces" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Nos Espaces</h2>
+                <p class="text-xl text-gray-600">Des lieux conçus pour l'art et la culture</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                            <i class="fas fa-user-friends text-3xl text-culture-purple mb-4"></i>
+                            <h4 class="font-semibold text-lg mb-2">Grande Salle</h4>
+                            <p class="text-gray-600">400 places</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                            <i class="fas fa-couch text-3xl text-culture-teal mb-4"></i>
+                            <h4 class="font-semibold text-lg mb-2">Petit Théâtre</h4>
+                            <p class="text-gray-600">120 places</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                            <i class="fas fa-image text-3xl text-culture-pink mb-4"></i>
+                            <h4 class="font-semibold text-lg mb-2">Galerie d'Art</h4>
+                            <p class="text-gray-600">200 m²</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                            <i class="fas fa-chalkboard-teacher text-3xl text-culture-orange mb-4"></i>
+                            <h4 class="font-semibold text-lg mb-2">Salles d'Ateliers</h4>
+                            <p class="text-gray-600">5 espaces</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-display font-semibold mb-6">Un équipement moderne</h3>
+                    <p class="text-gray-600 mb-6">
+                        Notre centre culturel dispose d'équipements de dernière génération pour accueillir tous types de spectacles et événements.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-culture-purple mr-3"></i>
+                            Système son et éclairage professionnel
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-culture-purple mr-3"></i>
+                            Accessibilité PMR
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-culture-purple mr-3"></i>
+                            Climatisation et acoustique optimisées
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-culture-purple mr-3"></i>
+                            Espaces de restauration
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-culture-purple mr-3"></i>
+                            Parking gratuit (200 places)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="ateliers" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Ateliers & Formations</h2>
+                <p class="text-xl text-gray-600">Développez votre créativité avec nos cours</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-culture-purple/10 to-culture-pink/10 p-8 rounded-xl hover-scale">
+                    <div class="w-16 h-16 bg-culture-purple text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-microphone text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Théâtre</h3>
+                    <p class="text-gray-600 mb-4">Cours d'art dramatique pour adultes et enfants, du débutant au confirmé.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-clock text-culture-purple mr-2"></i>2h/semaine</li>
+                        <li><i class="fas fa-euro-sign text-culture-purple mr-2"></i>60€/mois</li>
+                        <li><i class="fas fa-users text-culture-purple mr-2"></i>8-12 participants</li>
+                    </ul>
+                    <button class="w-full bg-culture-purple text-white py-3 rounded-lg hover:bg-purple-600 transition-colors">
+                        S'inscrire
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-culture-teal/10 to-culture-orange/10 p-8 rounded-xl hover-scale">
+                    <div class="w-16 h-16 bg-culture-teal text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-guitar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Musique</h3>
+                    <p class="text-gray-600 mb-4">Piano, guitare, chant - cours individuels et collectifs avec des professionnels.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-clock text-culture-teal mr-2"></i>1h/semaine</li>
+                        <li><i class="fas fa-euro-sign text-culture-teal mr-2"></i>80€/mois</li>
+                        <li><i class="fas fa-user text-culture-teal mr-2"></i>Cours individuel</li>
+                    </ul>
+                    <button class="w-full bg-culture-teal text-white py-3 rounded-lg hover:bg-teal-600 transition-colors">
+                        S'inscrire
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-culture-pink/10 to-culture-orange/10 p-8 rounded-xl hover-scale">
+                    <div class="w-16 h-16 bg-culture-pink text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Arts Plastiques</h3>
+                    <p class="text-gray-600 mb-4">Peinture, sculpture, dessin - explorez différentes techniques artistiques.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-clock text-culture-pink mr-2"></i>3h/semaine</li>
+                        <li><i class="fas fa-euro-sign text-culture-pink mr-2"></i>70€/mois</li>
+                        <li><i class="fas fa-users text-culture-pink mr-2"></i>6-10 participants</li>
+                    </ul>
+                    <button class="w-full bg-culture-pink text-white py-3 rounded-lg hover:bg-pink-600 transition-colors">
+                        S'inscrire
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Nous Contacter</h2>
+                <p class="text-xl text-gray-600">Venez nous rencontrer ou contactez-nous</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Informations Pratiques</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-culture-purple text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Horaires d'ouverture</h4>
+                                <p class="text-gray-600">Mar-Sam: 14h-20h</p>
+                                <p class="text-gray-600">Dim: 14h-18h</p>
+                                <p class="text-gray-600">Fermé le lundi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-culture-teal text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Téléphone</h4>
+                                <p class="text-gray-600">01 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-culture-pink text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">contact@centrelesarts.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-culture-orange text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Adresse</h4>
+                                <p class="text-gray-600">42 Boulevard des Arts<br>75000 Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-6">Nous écrire</h3>
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Nom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-culture-purple focus:border-transparent">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-culture-purple focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-culture-purple focus:border-transparent">
+                                <option>Sujet de votre demande</option>
+                                <option>Billetterie</option>
+                                <option>Inscription ateliers</option>
+                                <option>Location d'espaces</option>
+                                <option>Partenariats</option>
+                                <option>Autres</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-culture-purple focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full gradient-bg text-white py-3 px-6 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 gradient-bg text-white rounded-lg flex items-center justify-center">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <div class="font-display font-bold text-2xl">Centre Culturel Les Arts</div>
+                </div>
+                <p class="text-gray-400 mb-6">L'art et la culture au cœur de la cité</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                </div>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400">&copy; 2024 Centre Culturel Les Arts. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

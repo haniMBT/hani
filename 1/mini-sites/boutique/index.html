@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Boutique Mode en Ligne</title>
+    <meta name="description" content="StyleHub - Votre boutique mode en ligne. Collections tendance, livraison rapide et service client exceptionnel.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-pink': '#ec4899',
+                        'brand-purple': '#8b5cf6',
+                        'brand-blue': '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Poppins', sans-serif; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+        .gradient-bg { background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #3b82f6 100%); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-display font-bold text-2xl gradient-bg bg-clip-text text-transparent">
+                    StyleHub
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-brand-pink transition-colors">Accueil</a>
+                    <a href="#collections" class="text-gray-700 hover:text-brand-pink transition-colors">Collections</a>
+                    <a href="#produits" class="text-gray-700 hover:text-brand-pink transition-colors">Produits</a>
+                    <a href="#about" class="text-gray-700 hover:text-brand-pink transition-colors">À propos</a>
+                    <a href="#contact" class="text-gray-700 hover:text-brand-pink transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-600 hover:text-brand-pink">
+                        <i class="fas fa-search text-xl"></i>
+                    </button>
+                    <button class="text-gray-600 hover:text-brand-pink">
+                        <i class="fas fa-heart text-xl"></i>
+                    </button>
+                    <button class="text-gray-600 hover:text-brand-pink relative">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-brand-pink text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="relative min-h-screen">
+        <!-- Image Slider -->
+        <div class="slider-container relative h-screen overflow-hidden">
+            <div class="slider-track flex transition-transform duration-500 ease-in-out h-full" id="slider">
+                <!-- Slide 1 -->
+                <div class="slide w-full flex-shrink-0 relative gradient-bg flex items-center">
+                    <div class="absolute inset-0 bg-black/20"></div>
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 text-white">
+                        <div class="text-center">
+                            <h1 class="text-5xl md:text-7xl font-display font-bold mb-6">
+                                Mode &
+                                <span class="text-yellow-300">Style</span>
+                            </h1>
+                            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                                Découvrez nos collections exclusives et exprimez votre style unique avec nos pièces tendance
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <button class="bg-white text-brand-pink px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                                    Découvrir les collections
+                                </button>
+                                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-brand-pink transition-all">
+                                    Offres spéciales
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide w-full flex-shrink-0 relative bg-gradient-to-r from-purple-600 to-pink-600 flex items-center">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 text-white">
+                        <div class="text-center">
+                            <h1 class="text-5xl md:text-7xl font-display font-bold mb-6">
+                                Collection
+                                <span class="text-yellow-300">Automne</span>
+                            </h1>
+                            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                                Nouvelles tendances mode pour une saison pleine de style et d'élégance
+                            </p>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-md mx-auto">
+                                <h3 class="text-xl font-semibold mb-2">🎉 Promo Spéciale</h3>
+                                <p class="text-lg">-30% sur toute la collection printemps</p>
+                                <p class="text-sm opacity-80">Code: SPRING30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide w-full flex-shrink-0 relative bg-gradient-to-r from-blue-600 to-teal-500 flex items-center">
+                    <div class="absolute inset-0 bg-black/25"></div>
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 text-white">
+                        <div class="text-center">
+                            <h1 class="text-5xl md:text-7xl font-display font-bold mb-6">
+                                Livraison
+                                <span class="text-yellow-300">Gratuite</span>
+                            </h1>
+                            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                                Profitez de la livraison gratuite dès 50€ d'achat partout en France
+                            </p>
+                            <div class="flex justify-center space-x-8 text-lg font-semibold">
+                                <div class="flex items-center"><i class="fas fa-truck mr-2"></i> Livraison rapide</div>
+                                <div class="flex items-center"><i class="fas fa-shield-alt mr-2"></i> Paiement sécurisé</div>
+                                <div class="flex items-center"><i class="fas fa-undo mr-2"></i> Retour gratuit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all duration-200 z-20" onclick="previousSlide()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all duration-200 z-20" onclick="nextSlide()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Dots Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+                <button class="dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-200" onclick="currentSlide(1)"></button>
+                <button class="dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-200" onclick="currentSlide(2)"></button>
+                <button class="dot w-3 h-3 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-200" onclick="currentSlide(3)"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="collections" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Nos Collections</h2>
+                <p class="text-xl text-gray-600">Mode pour tous les styles et toutes les occasions</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group cursor-pointer hover-scale">
+                    <div class="bg-gradient-to-r from-brand-pink to-brand-purple h-80 rounded-xl mb-4 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Femme</h3>
+                            <p class="text-lg">Élégance & Féminité</p>
+                        </div>
+                    </div>
+                    <button class="w-full bg-brand-pink text-white py-3 rounded-lg hover:bg-pink-600 transition-colors">
+                        Découvrir
+                    </button>
+                </div>
+                
+                <div class="group cursor-pointer hover-scale">
+                    <div class="bg-gradient-to-r from-brand-blue to-brand-purple h-80 rounded-xl mb-4 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Homme</h3>
+                            <p class="text-lg">Style & Modernité</p>
+                        </div>
+                    </div>
+                    <button class="w-full bg-brand-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                        Découvrir
+                    </button>
+                </div>
+                
+                <div class="group cursor-pointer hover-scale">
+                    <div class="bg-gradient-to-r from-yellow-400 to-brand-pink h-80 rounded-xl mb-4 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-300"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Accessoires</h3>
+                            <p class="text-lg">Finition Parfaite</p>
+                        </div>
+                    </div>
+                    <button class="w-full bg-yellow-500 text-white py-3 rounded-lg hover:bg-yellow-600 transition-colors">
+                        Découvrir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produits" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Produits Tendance</h2>
+                <p class="text-xl text-gray-600">Les dernières nouveautés de la mode</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-64 bg-gradient-to-br from-brand-pink/20 to-brand-purple/20 relative">
+                        <span class="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-30%</span>
+                        <span class="absolute top-4 right-4 text-gray-400 hover:text-red-500 cursor-pointer">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Robe d'été florale</h3>
+                        <p class="text-gray-600 text-sm mb-3">Robe légère parfaite pour l'été</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-lg font-bold text-brand-pink">45€</span>
+                                <span class="text-gray-400 line-through ml-2">65€</span>
+                            </div>
+                            <button class="bg-brand-pink text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-64 bg-gradient-to-br from-brand-blue/20 to-brand-purple/20 relative">
+                        <span class="absolute top-4 right-4 text-gray-400 hover:text-red-500 cursor-pointer">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Chemise casual homme</h3>
+                        <p class="text-gray-600 text-sm mb-3">Style décontracté pour le quotidien</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-lg font-bold text-brand-blue">35€</span>
+                            </div>
+                            <button class="bg-brand-blue text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-64 bg-gradient-to-br from-yellow-200 to-brand-pink/20 relative">
+                        <span class="absolute top-4 left-4 bg-green-500 text-white px-2 py-1 rounded-full text-sm">Nouveau</span>
+                        <span class="absolute top-4 right-4 text-gray-400 hover:text-red-500 cursor-pointer">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Sac à main cuir</h3>
+                        <p class="text-gray-600 text-sm mb-3">Accessoire élégant en cuir véritable</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-lg font-bold text-yellow-600">89€</span>
+                            </div>
+                            <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-64 bg-gradient-to-br from-brand-purple/20 to-brand-blue/20 relative">
+                        <span class="absolute top-4 right-4 text-red-500 cursor-pointer">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Sneakers premium</h3>
+                        <p class="text-gray-600 text-sm mb-3">Confort et style pour vos pieds</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-lg font-bold text-brand-purple">120€</span>
+                            </div>
+                            <button class="bg-brand-purple text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors">
+                    Voir tous les produits
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-pink text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shipping-fast text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Livraison Rapide</h3>
+                    <p class="text-gray-600">Livraison gratuite dès 50€ d'achat</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-undo text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Retours Gratuits</h3>
+                    <p class="text-gray-600">30 jours pour changer d'avis</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Paiement Sécurisé</h3>
+                    <p class="text-gray-600">Transactions 100% sécurisées</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Service Client</h3>
+                    <p class="text-gray-600">Support 7j/7 pour vous aider</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-display font-bold text-gray-900 mb-6">Notre Histoire</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Depuis 2018, StyleHub s'est imposée comme une référence dans la mode en ligne. Notre mission est de démocratiser la mode de qualité en proposant des pièces tendance à des prix accessibles.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Nous sélectionnons avec soin chaque produit pour vous offrir le meilleur de la mode actuelle, tout en respectant nos valeurs d'éthique et de durabilité.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brand-pink mb-2">50k+</div>
+                            <div class="text-gray-600">Clients satisfaits</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brand-blue mb-2">1000+</div>
+                            <div class="text-gray-600">Produits</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brand-purple mb-2">99%</div>
+                            <div class="text-gray-600">Avis positifs</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-brand-pink to-brand-purple rounded-3xl p-8">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mode" class="rounded-2xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-display font-bold mb-4">Restez à la Mode</h2>
+            <p class="text-xl mb-8">Inscrivez-vous à notre newsletter pour recevoir les dernières tendances et offres exclusives</p>
+            
+            <div class="max-w-md mx-auto">
+                <div class="flex gap-4">
+                    <input type="email" placeholder="Votre email" class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                    <button class="bg-white text-brand-pink px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        S'inscrire
+                    </button>
+                </div>
+                <p class="text-sm mt-4 opacity-80">Promis, pas de spam. Seulement les meilleures offres !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Contactez-nous</h2>
+                <p class="text-xl text-gray-600">Notre équipe est là pour vous aider</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Service Client</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-brand-pink text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Horaires</h4>
+                                <p class="text-gray-600">Lun-Ven: 9h-18h</p>
+                                <p class="text-gray-600">Sam: 10h-16h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-brand-blue text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Téléphone</h4>
+                                <p class="text-gray-600">0800 123 456 (gratuit)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-brand-purple text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">support@stylehub.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-500 text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Chat en ligne</h4>
+                                <p class="text-gray-600">Disponible 24h/7j</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-6">Nous écrire</h3>
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Nom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-pink focus:border-transparent">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-pink focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-pink focus:border-transparent">
+                                <option>Sujet de votre message</option>
+                                <option>Question sur une commande</option>
+                                <option>Retour/Échange</option>
+                                <option>Problème technique</option>
+                                <option>Suggestion</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-pink focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full gradient-bg text-white py-3 px-6 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="font-display font-bold text-2xl gradient-bg bg-clip-text text-transparent mb-4">
+                        StyleHub
+                    </div>
+                    <p class="text-gray-400 mb-6">Votre destination mode en ligne</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-tiktok text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Collections</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Femme</a></li>
+                        <li><a href="#" class="hover:text-white">Homme</a></li>
+                        <li><a href="#" class="hover:text-white">Accessoires</a></li>
+                        <li><a href="#" class="hover:text-white">Nouveautés</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Service Client</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Livraison</a></li>
+                        <li><a href="#" class="hover:text-white">Retours</a></li>
+                        <li><a href="#" class="hover:text-white">Guide des tailles</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Informations</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">À propos</a></li>
+                        <li><a href="#" class="hover:text-white">Mentions légales</a></li>
+                        <li><a href="#" class="hover:text-white">CGV</a></li>
+                        <li><a href="#" class="hover:text-white">Confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 StyleHub. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Slider functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            const slider = document.getElementById('slider');
+            currentSlideIndex = index;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Update dots
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.add('bg-white');
+                    dot.classList.remove('bg-white/50');
+                } else {
+                    dot.classList.add('bg-white/50');
+                    dot.classList.remove('bg-white');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+            showSlide(currentSlideIndex);
+        }
+
+        function previousSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlideIndex);
+        }
+
+        function currentSlide(index) {
+            showSlide(index - 1);
+        }
+
+        // Auto slide
+        setInterval(nextSlide, 6000);
+
+        // Initialize first slide
+        showSlide(0);
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Simple cart functionality
+        let cartCount = 3;
+        document.querySelectorAll('.fa-shopping-cart').forEach(button => {
+            if (button.closest('button') && !button.closest('nav')) {
+                button.closest('button').addEventListener('click', function() {
+                    cartCount++;
+                    document.querySelector('nav .fa-shopping-cart').nextElementSibling.textContent = cartCount;
+                    
+                    // Show notification
+                    const notification = document.createElement('div');
+                    notification.className = 'fixed top-20 right-4 bg-green-500 text-white px-4 py-2 rounded-lg z-50';
+                    notification.textContent = 'Produit ajouté au panier !';
+                    document.body.appendChild(notification);
+                    
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 3000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

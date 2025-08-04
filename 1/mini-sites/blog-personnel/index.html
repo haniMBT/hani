@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Blog Personnel - Tech & Lifestyle</title>
+    <meta name="description" content="Blog personnel sur la technologie, le développement web et le lifestyle digital. Partage d'expériences et de conseils.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'blog-blue': '#3b82f6',
+                        'blog-purple': '#8b5cf6',
+                        'blog-pink': '#ec4899'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-display font-bold text-2xl text-blog-blue">
+                    Mon Blog
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blog-blue transition-colors">Accueil</a>
+                    <a href="#articles" class="text-gray-700 hover:text-blog-blue transition-colors">Articles</a>
+                    <a href="#categories" class="text-gray-700 hover:text-blog-blue transition-colors">Catégories</a>
+                    <a href="#about" class="text-gray-700 hover:text-blog-blue transition-colors">À propos</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blog-blue transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-600 hover:text-blog-blue">
+                        <i class="fas fa-search text-xl"></i>
+                    </button>
+                    <button class="text-gray-600 hover:text-blog-blue">
+                        <i class="fas fa-moon text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-blog-blue/10 to-blog-purple/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center py-20">
+                <h1 class="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-6">
+                    Bienvenue sur
+                    <span class="text-blog-blue">Mon Blog</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Explorez mes réflexions sur la technologie, le développement web et la vie numérique. 
+                    Découvrez des tutoriels, des conseils et mes expériences personnelles.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-blog-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                        Lire les derniers articles
+                    </button>
+                    <button class="border-2 border-blog-purple text-blog-purple px-8 py-3 rounded-lg font-semibold hover:bg-blog-purple hover:text-white transition-all">
+                        S'abonner au blog
+                    </button>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="flex justify-center space-x-6 mt-8">
+                    <a href="#" class="text-gray-400 hover:text-blog-blue transition-colors">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blog-blue transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blog-blue transition-colors">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blog-blue transition-colors">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display font-bold text-gray-900 mb-4">Article À la Une</h2>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover-scale">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <div class="h-64 md:h-full bg-gradient-to-r from-blog-blue to-blog-purple"></div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <span class="bg-blog-blue text-white px-3 py-1 rounded-full text-sm">Développement</span>
+                            <span class="text-gray-500 text-sm">15 Mars 2024</span>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-gray-900 mb-4">
+                            Les tendances du développement web en 2024
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            Découvrez les technologies émergentes qui vont révolutionner le développement web cette année. 
+                            De l'IA aux nouveaux frameworks, explorons ensemble l'avenir du web.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-blog-blue rounded-full"></div>
+                                <div>
+                                    <div class="font-semibold text-sm">Alex Dupont</div>
+                                    <div class="text-gray-500 text-xs">5 min de lecture</div>
+                                </div>
+                            </div>
+                            <button class="text-blog-blue hover:text-blue-600 font-semibold">
+                                Lire l'article →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section id="articles" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display font-bold text-gray-900 mb-4">Articles Récents</h2>
+                <p class="text-xl text-gray-600">Les dernières publications du blog</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-blog-purple to-blog-pink"></div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <span class="bg-blog-purple text-white px-3 py-1 rounded-full text-sm">Tutorial</span>
+                            <span class="text-gray-500 text-sm">12 Mars 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Guide complet de Tailwind CSS</h3>
+                        <p class="text-gray-600 mb-4">
+                            Apprenez à maîtriser Tailwind CSS avec ce guide pratique complet...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">8 min de lecture</span>
+                            <button class="text-blog-purple hover:text-purple-600 font-semibold text-sm">
+                                Lire →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 2 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-blog-pink to-blog-blue"></div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <span class="bg-blog-pink text-white px-3 py-1 rounded-full text-sm">Lifestyle</span>
+                            <span class="text-gray-500 text-sm">10 Mars 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Productivité en télétravail</h3>
+                        <p class="text-gray-600 mb-4">
+                            Mes meilleures astuces pour rester productif en travaillant à distance...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">6 min de lecture</span>
+                            <button class="text-blog-pink hover:text-pink-600 font-semibold text-sm">
+                                Lire →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 3 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-green-400 to-blog-blue"></div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Tech</span>
+                            <span class="text-gray-500 text-sm">8 Mars 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">L'IA dans le développement</h3>
+                        <p class="text-gray-600 mb-4">
+                            Comment l'intelligence artificielle révolutionne notre façon de coder...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">10 min de lecture</span>
+                            <button class="text-green-500 hover:text-green-600 font-semibold text-sm">
+                                Lire →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 4 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-orange-400 to-blog-purple"></div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm">Projet</span>
+                            <span class="text-gray-500 text-sm">5 Mars 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Mon portfolio en Vue.js</h3>
+                        <p class="text-gray-600 mb-4">
+                            Retour d'expérience sur la création de mon nouveau portfolio...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">12 min de lecture</span>
+                            <button class="text-orange-500 hover:text-orange-600 font-semibold text-sm">
+                                Lire →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 5 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-blog-blue to-indigo-500"></div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <span class="bg-indigo-500 text-white px-3 py-1 rounded-full text-sm">Opinion</span>
+                            <span class="text-gray-500 text-sm">1 Mars 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">L'avenir du web mobile</h3>
+                        <p class="text-gray-600 mb-4">
+                            Réflexions sur l'évolution des technologies mobiles et PWA...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">7 min de lecture</span>
+                            <button class="text-indigo-500 hover:text-indigo-600 font-semibold text-sm">
+                                Lire →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 6 -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="h-48 bg-gradient-to-r from-red-400 to-blog-pink"></div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm">Comparatif</span>
+                            <span class="text-gray-500 text-sm">28 Fév 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">React vs Vue vs Angular</h3>
+                        <p class="text-gray-600 mb-4">
+                            Comparaison détaillée des trois frameworks JavaScript les plus populaires...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">15 min de lecture</span>
+                            <button class="text-red-500 hover:text-red-600 font-semibold text-sm">
+                                Lire →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors">
+                    Voir tous les articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display font-bold text-gray-900 mb-4">Catégories</h2>
+                <p class="text-xl text-gray-600">Explorez les sujets qui m'intéressent</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blog-blue to-blog-purple p-6 rounded-xl text-white text-center hover-scale cursor-pointer">
+                    <i class="fas fa-code text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Développement</h3>
+                    <p class="text-sm opacity-90">Tutoriels et astuces de dev</p>
+                    <span class="text-xs bg-white/20 px-2 py-1 rounded-full mt-3 inline-block">23 articles</span>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blog-purple to-blog-pink p-6 rounded-xl text-white text-center hover-scale cursor-pointer">
+                    <i class="fas fa-laptop text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Tech</h3>
+                    <p class="text-sm opacity-90">Actualités technologiques</p>
+                    <span class="text-xs bg-white/20 px-2 py-1 rounded-full mt-3 inline-block">18 articles</span>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blog-pink to-red-500 p-6 rounded-xl text-white text-center hover-scale cursor-pointer">
+                    <i class="fas fa-lightbulb text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Lifestyle</h3>
+                    <p class="text-sm opacity-90">Productivité et bien-être</p>
+                    <span class="text-xs bg-white/20 px-2 py-1 rounded-full mt-3 inline-block">12 articles</span>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-400 to-blog-blue p-6 rounded-xl text-white text-center hover-scale cursor-pointer">
+                    <i class="fas fa-rocket text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Projets</h3>
+                    <p class="text-sm opacity-90">Mes créations et expériences</p>
+                    <span class="text-xs bg-white/20 px-2 py-1 rounded-full mt-3 inline-block">8 articles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-display font-bold text-gray-900 mb-6">À propos de moi</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Salut ! Je suis Alex, développeur web passionné et créateur de contenu. Sur ce blog, je partage mes découvertes, mes apprentissages et mes réflexions sur le monde de la tech.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Quand je ne code pas, j'aime explorer de nouvelles technologies, lire sur l'innovation et partager mes connaissances avec la communauté.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blog-blue mb-2">50+</div>
+                            <div class="text-gray-600">Articles publiés</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blog-purple mb-2">10k+</div>
+                            <div class="text-gray-600">Lecteurs mensuels</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="w-64 h-64 bg-gradient-to-br from-blog-blue to-blog-purple rounded-full mx-auto mb-6"></div>
+                    <h3 class="text-xl font-semibold mb-2">Alex Dupont</h3>
+                    <p class="text-gray-600 mb-4">Développeur Full-Stack & Blogger</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blog-blue">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blog-blue">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blog-blue">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-gradient-to-r from-blog-blue to-blog-purple text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-display font-bold mb-4">Restez informé</h2>
+            <p class="text-xl mb-8">Recevez mes derniers articles directement dans votre boîte mail</p>
+            
+            <div class="max-w-md mx-auto">
+                <div class="flex gap-4">
+                    <input type="email" placeholder="Votre email" class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                    <button class="bg-white text-blog-blue px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        S'abonner
+                    </button>
+                </div>
+                <p class="text-sm mt-4 opacity-80">Pas de spam, juste du contenu de qualité !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display font-bold text-gray-900 mb-4">Contactez-moi</h2>
+                <p class="text-xl text-gray-600">Une question ? Une collaboration ? N'hésitez pas !</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Nom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blog-blue focus:border-transparent">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blog-blue focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <input type="text" placeholder="Sujet" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blog-blue focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blog-blue focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blog-blue text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-600 transition-colors">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="flex justify-center space-x-8 mt-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-blog-blue text-white rounded-lg flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text-sm text-gray-600">alex@monblog.fr</div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-blog-purple text-white rounded-lg flex items-center justify-center mx-auto mb-2">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="text-sm text-gray-600">@alexdupont</div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-blog-pink text-white rounded-lg flex items-center justify-center mx-auto mb-2">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="text-sm text-gray-600">Alex Dupont</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="font-display font-bold text-2xl text-blog-blue mb-4">Mon Blog</div>
+                <p class="text-gray-400 mb-6">Partager la passion du développement et de la tech</p>
+                
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fas fa-rss text-xl"></i></a>
+                </div>
+                
+                <div class="flex justify-center space-x-8 mb-8 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-white">Mentions légales</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Politique de confidentialité</a>
+                    <a href="#" class="text-gray-400 hover:text-white">RSS</a>
+                </div>
+                
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400">&copy; 2024 Mon Blog Personnel. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Dark mode toggle
+        document.querySelector('.fa-moon').closest('button').addEventListener('click', function() {
+            document.body.classList.toggle('dark');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        });
+    </script>
+</body>
+</html>

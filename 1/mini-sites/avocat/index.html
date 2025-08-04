@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maître Dubois - Cabinet d'Avocats</title>
+    <meta name="description" content="Cabinet d'avocats Maître Dubois - Expertise juridique en droit des affaires, droit de la famille et droit pénal.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'law-navy': '#1e3a8a',
+                        'law-gold': '#d97706',
+                        'law-gray': '#374151'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Crimson Text', serif; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-law-navy text-white rounded-lg flex items-center justify-center">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div>
+                        <div class="font-serif font-bold text-xl text-law-navy">Maître Dubois</div>
+                        <div class="text-xs text-gray-600">Cabinet d'Avocats</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-law-navy transition-colors">Accueil</a>
+                    <a href="#expertises" class="text-gray-700 hover:text-law-navy transition-colors">Expertises</a>
+                    <a href="#cabinet" class="text-gray-700 hover:text-law-navy transition-colors">Le Cabinet</a>
+                    <a href="#equipe" class="text-gray-700 hover:text-law-navy transition-colors">Équipe</a>
+                    <a href="#contact" class="text-gray-700 hover:text-law-navy transition-colors">Contact</a>
+                </div>
+                <button class="bg-law-gold text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                    Consultation
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-serif font-bold text-gray-900 mb-6">
+                        Votre défense,
+                        <span class="text-law-navy">notre engagement</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Cabinet d'avocats spécialisé en droit des affaires, droit de la famille et droit pénal. 
+                        Plus de 20 ans d'expérience au service de vos droits.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-law-navy text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                            Prendre rendez-vous
+                        </button>
+                        <button class="border-2 border-law-gold text-law-gold px-8 py-3 rounded-lg font-semibold hover:bg-law-gold hover:text-white transition-all">
+                            Nos expertises
+                        </button>
+                    </div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="grid grid-cols-3 gap-8 mt-12">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-law-navy mb-2">20+</div>
+                            <div class="text-gray-600 text-sm">Années d'expérience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-law-navy mb-2">500+</div>
+                            <div class="text-gray-600 text-sm">Dossiers traités</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-law-navy mb-2">95%</div>
+                            <div class="text-gray-600 text-sm">Taux de réussite</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-law-navy/10 rounded-3xl p-8">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Justice" class="rounded-2xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertises" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-gray-900 mb-4">Nos Domaines d'Expertise</h2>
+                <p class="text-xl text-gray-600">Conseil et défense dans tous vos projets juridiques</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-law-navy text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-briefcase text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Droit des Affaires</h3>
+                    <p class="text-gray-600 mb-4">Accompagnement juridique des entreprises dans leur développement et leurs relations commerciales.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Création d'entreprise</li>
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Contrats commerciaux</li>
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Litiges commerciaux</li>
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Propriété intellectuelle</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-law-gold text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Droit de la Famille</h3>
+                    <p class="text-gray-600 mb-4">Conseil et assistance dans toutes les procédures familiales avec empathie et professionnalisme.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Divorce et séparation</li>
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Garde d'enfants</li>
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Pension alimentaire</li>
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Adoption</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-red-600 text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-gavel text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Droit Pénal</h3>
+                    <p class="text-gray-600 mb-4">Défense pénale avec rigueur et détermination pour protéger vos droits et votre liberté.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Délits et contraventions</li>
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Crimes et cours d'assises</li>
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Garde à vue</li>
+                        <li><i class="fas fa-check text-law-gold mr-2"></i>Appel et cassation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cabinet Section -->
+    <section id="cabinet" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-serif font-bold text-gray-900 mb-6">Le Cabinet</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Fondé en 2003, le Cabinet Maître Dubois s'est imposé comme une référence dans le domaine juridique grâce à son expertise reconnue et son approche personnalisée de chaque dossier.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Notre philosophie repose sur l'écoute, la rigueur et la transparence. Nous mettons notre expérience au service de particuliers et d'entreprises pour les accompagner dans leurs démarches juridiques les plus complexes.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-law-navy text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Excellence juridique</h4>
+                                <p class="text-gray-600">Formation continue et veille juridique permanente</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-law-gold text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Relation de confiance</h4>
+                                <p class="text-gray-600">Écoute, transparence et communication régulière</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Réactivité</h4>
+                                <p class="text-gray-600">Disponibilité 24h/24 pour les urgences</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cabinet" class="rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipe" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-gray-900 mb-4">Notre Équipe</h2>
+                <p class="text-xl text-gray-600">Des professionnels dévoués à votre service</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover-scale">
+                    <div class="w-32 h-32 bg-gradient-to-r from-law-navy to-law-gold rounded-full mx-auto mb-6"></div>
+                    <h3 class="text-xl font-semibold mb-2">Maître Jean Dubois</h3>
+                    <p class="text-law-navy font-medium mb-2">Avocat Associé</p>
+                    <p class="text-gray-600 mb-4">Spécialiste en droit des affaires et droit pénal. 20 ans d'expérience au barreau de Paris.</p>
+                    <div class="flex justify-center space-x-3">
+                        <span class="px-3 py-1 bg-law-navy/10 text-law-navy text-sm rounded-full">Droit des affaires</span>
+                        <span class="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">Droit pénal</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover-scale">
+                    <div class="w-32 h-32 bg-gradient-to-r from-law-gold to-purple-500 rounded-full mx-auto mb-6"></div>
+                    <h3 class="text-xl font-semibold mb-2">Maître Sophie Martin</h3>
+                    <p class="text-law-navy font-medium mb-2">Avocate Associée</p>
+                    <p class="text-gray-600 mb-4">Experte en droit de la famille et droit social. Diplômée de l'École du Barreau.</p>
+                    <div class="flex justify-center space-x-3">
+                        <span class="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">Droit de la famille</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Droit social</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover-scale">
+                    <div class="w-32 h-32 bg-gradient-to-r from-green-500 to-law-navy rounded-full mx-auto mb-6"></div>
+                    <h3 class="text-xl font-semibold mb-2">Maître Pierre Leroy</h3>
+                    <p class="text-law-navy font-medium mb-2">Avocat Collaborateur</p>
+                    <p class="text-gray-600 mb-4">Jeune avocat spécialisé en droit immobilier et nouvelles technologies.</p>
+                    <div class="flex justify-center space-x-3">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Droit immobilier</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">NTIC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-gray-900 mb-4">Nous Contacter</h2>
+                <p class="text-xl text-gray-600">Prenez rendez-vous pour une consultation</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Coordonnées du Cabinet</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-law-navy text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Horaires d'ouverture</h4>
+                                <p class="text-gray-600">Lun-Ven: 9h00 - 18h00</p>
+                                <p class="text-gray-600">Sur rendez-vous uniquement</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-law-gold text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Téléphone</h4>
+                                <p class="text-gray-600">01 42 86 75 00</p>
+                                <p class="text-gray-600 text-sm">Urgences: 06 12 34 56 78</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">contact@cabinet-dubois.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-law-navy text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Adresse</h4>
+                                <p class="text-gray-600">15 Rue de la Justice<br>75001 Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Legal Info -->
+                    <div class="mt-8 p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-medium mb-2">Informations légales</h4>
+                        <p class="text-sm text-gray-600">Cabinet inscrit au Barreau de Paris</p>
+                        <p class="text-sm text-gray-600">Assurance responsabilité civile: AXA</p>
+                        <p class="text-sm text-gray-600">SIRET: 123 456 789 00012</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-6">Demande de consultation</h3>
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Nom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-law-navy focus:border-transparent">
+                            <input type="text" placeholder="Prénom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-law-navy focus:border-transparent">
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-law-navy focus:border-transparent">
+                            <input type="tel" placeholder="Téléphone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-law-navy focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-law-navy focus:border-transparent">
+                                <option>Domaine juridique</option>
+                                <option>Droit des affaires</option>
+                                <option>Droit de la famille</option>
+                                <option>Droit pénal</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Décrivez brièvement votre situation" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-law-navy focus:border-transparent"></textarea>
+                        </div>
+                        <div class="mb-6">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-law-navy focus:ring-law-navy mr-2">
+                                <span class="text-sm text-gray-600">J'accepte la politique de confidentialité et le traitement de mes données</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="w-full bg-law-navy text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-800 transition-colors">
+                            Demander une consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-law-gray text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 bg-law-navy text-white rounded-lg flex items-center justify-center">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="font-serif font-bold text-2xl">Cabinet Maître Dubois</div>
+                </div>
+                <p class="text-gray-300 mb-6">Excellence juridique • Écoute • Efficacité</p>
+                <div class="flex justify-center space-x-8 mb-8 text-sm">
+                    <a href="#" class="text-gray-300 hover:text-white">Mentions légales</a>
+                    <a href="#" class="text-gray-300 hover:text-white">Politique de confidentialité</a>
+                    <a href="#" class="text-gray-300 hover:text-white">Honoraires</a>
+                </div>
+                <div class="border-t border-gray-600 pt-8">
+                    <p class="text-gray-400">&copy; 2024 Cabinet Maître Dubois. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

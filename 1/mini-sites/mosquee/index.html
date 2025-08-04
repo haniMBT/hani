@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosquée Al-Nour - Centre Islamique</title>
+    <meta name="description" content="Mosquée Al-Nour - Centre islamique accueillant pour la prière, l'apprentissage et la communauté musulmane.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'islamic-green': '#059669',
+                        'islamic-gold': '#d97706',
+                        'islamic-blue': '#1e40af'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-arabic { font-family: 'Amiri', serif; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-islamic-green text-white rounded-lg flex items-center justify-center">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="font-semibold text-xl text-islamic-green">
+                        Mosquée Al-Nour
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-islamic-green transition-colors">Accueil</a>
+                    <a href="#services" class="text-gray-700 hover:text-islamic-green transition-colors">Services</a>
+                    <a href="#horaires" class="text-gray-700 hover:text-islamic-green transition-colors">Horaires</a>
+                    <a href="#events" class="text-gray-700 hover:text-islamic-green transition-colors">Événements</a>
+                    <a href="#contact" class="text-gray-700 hover:text-islamic-green transition-colors">Contact</a>
+                </div>
+                <button class="bg-islamic-gold text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                    Faire un don
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-green-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <div class="font-arabic text-4xl md:text-6xl text-islamic-green mb-6">
+                    بسم الله الرحمن الرحيم
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Bienvenue à la
+                    <span class="text-islamic-green">Mosquée Al-Nour</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Centre islamique accueillant dédié à la prière, l'apprentissage et le renforcement des liens communautaires.
+                </p>
+                
+                <!-- Prayer Times Widget -->
+                <div class="bg-white p-6 rounded-xl shadow-lg max-w-2xl mx-auto mb-8">
+                    <h3 class="text-xl font-semibold text-islamic-green mb-4">Horaires de Prière - Aujourd'hui</h3>
+                    <div class="grid grid-cols-5 gap-4 text-center">
+                        <div>
+                            <div class="text-sm text-gray-600">Fajr</div>
+                            <div class="font-semibold">5:45</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-600">Dhuhr</div>
+                            <div class="font-semibold">13:15</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-600">Asr</div>
+                            <div class="font-semibold">16:30</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-600">Maghrib</div>
+                            <div class="font-semibold">18:45</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-600">Isha</div>
+                            <div class="font-semibold">20:15</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-islamic-green text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors">
+                        Nos services
+                    </button>
+                    <button class="border-2 border-islamic-gold text-islamic-gold px-8 py-3 rounded-lg font-semibold hover:bg-islamic-gold hover:text-white transition-all">
+                        Nous contacter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nos Services</h2>
+                <p class="text-xl text-gray-600">Au service de la communauté musulmane</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-islamic-green text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-pray text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Prières Quotidiennes</h3>
+                    <p class="text-gray-600 mb-4">Salles de prière pour hommes et femmes avec tous les équipements nécessaires.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-islamic-green mr-2"></i>5 prières quotidiennes</li>
+                        <li><i class="fas fa-check text-islamic-green mr-2"></i>Prière du vendredi (Jumu'ah)</li>
+                        <li><i class="fas fa-check text-islamic-green mr-2"></i>Prières des fêtes (Eid)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-islamic-blue text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-book-open text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Enseignement</h3>
+                    <p class="text-gray-600 mb-4">Cours de Coran, langue arabe et sciences islamiques pour tous les âges.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-islamic-green mr-2"></i>Mémorisation du Coran</li>
+                        <li><i class="fas fa-check text-islamic-green mr-2"></i>Cours d'arabe</li>
+                        <li><i class="fas fa-check text-islamic-green mr-2"></i>École du dimanche</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-scale">
+                    <div class="w-16 h-16 bg-islamic-gold text-white rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-hands-helping text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Services Communautaires</h3>
+                    <p class="text-gray-600 mb-4">Soutien et accompagnement pour les membres de la communauté.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-islamic-green mr-2"></i>Mariages religieux</li>
+                        <li><i class="fas fa-check text-islamic-green mr-2"></i>Conseils spirituels</li>
+                        <li><i class="fas fa-check text-islamic-green mr-2"></i>Aide sociale</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Times Section -->
+    <section id="horaires" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Horaires de Prière</h2>
+                <p class="text-xl text-gray-600">Horaires mis à jour quotidiennement</p>
+            </div>
+            
+            <div class="bg-gradient-to-r from-islamic-green to-islamic-blue text-white p-8 rounded-xl shadow-lg">
+                <div class="grid md:grid-cols-5 gap-6 text-center">
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-2">Fajr</h3>
+                        <p class="text-3xl font-bold">5:45</p>
+                        <p class="text-sm opacity-80">Aube</p>
+                    </div>
+                    
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-2">Dhuhr</h3>
+                        <p class="text-3xl font-bold">13:15</p>
+                        <p class="text-sm opacity-80">Midi</p>
+                    </div>
+                    
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-2">Asr</h3>
+                        <p class="text-3xl font-bold">16:30</p>
+                        <p class="text-sm opacity-80">Après-midi</p>
+                    </div>
+                    
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-2">Maghrib</h3>
+                        <p class="text-3xl font-bold">18:45</p>
+                        <p class="text-sm opacity-80">Coucher du soleil</p>
+                    </div>
+                    
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-2">Isha</h3>
+                        <p class="text-3xl font-bold">20:15</p>
+                        <p class="text-sm opacity-80">Nuit</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <p class="text-lg">Prière du vendredi (Jumu'ah): <span class="font-bold">13:30</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Événements</h2>
+                <p class="text-xl text-gray-600">Prochains événements communautaires</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover-scale">
+                    <div class="bg-islamic-green text-white p-3 rounded-lg mb-4 text-center">
+                        <div class="text-2xl font-bold">15</div>
+                        <div class="text-sm">Mars</div>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Conférence Islamique</h3>
+                    <p class="text-gray-600 mb-4">Les valeurs islamiques dans la société moderne</p>
+                    <div class="text-sm text-gray-500">19h30 - Grande salle</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover-scale">
+                    <div class="bg-islamic-blue text-white p-3 rounded-lg mb-4 text-center">
+                        <div class="text-2xl font-bold">22</div>
+                        <div class="text-sm">Mars</div>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Repas Communautaire</h3>
+                    <p class="text-gray-600 mb-4">Iftar collectif et partage entre familles</p>
+                    <div class="text-sm text-gray-500">18h00 - Salle communautaire</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover-scale">
+                    <div class="bg-islamic-gold text-white p-3 rounded-lg mb-4 text-center">
+                        <div class="text-2xl font-bold">29</div>
+                        <div class="text-sm">Mars</div>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Cours d'Arabe</h3>
+                    <p class="text-gray-600 mb-4">Inscription ouverte pour les cours d'arabe débutants</p>
+                    <div class="text-sm text-gray-500">14h00 - Salle de classe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nous Contacter</h2>
+                <p class="text-xl text-gray-600">N'hésitez pas à nous rendre visite</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Informations Pratiques</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-islamic-green text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Horaires d'ouverture</h4>
+                                <p class="text-gray-600">Ouvert tous les jours</p>
+                                <p class="text-gray-600">Fajr à Isha</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-islamic-blue text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Téléphone</h4>
+                                <p class="text-gray-600">01 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-islamic-gold text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">contact@mosquee-alnour.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-islamic-green text-white rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Adresse</h4>
+                                <p class="text-gray-600">123 Avenue de la Paix<br>93000 Bobigny</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-6">Nous écrire</h3>
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Nom" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-islamic-green focus:border-transparent">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-islamic-green focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <input type="text" placeholder="Sujet" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-islamic-green focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-islamic-green focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-islamic-green text-white py-3 px-6 rounded-lg font-medium hover:bg-green-600 transition-colors">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 bg-islamic-green text-white rounded-lg flex items-center justify-center">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="font-semibold text-2xl">Mosquée Al-Nour</div>
+                </div>
+                <div class="font-arabic text-lg text-gray-300 mb-4">
+                    والله أعلم
+                </div>
+                <p class="text-gray-400 mb-6">Centre islamique - Communauté unie</p>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400">&copy; 2024 Mosquée Al-Nour. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Update prayer times (placeholder - would connect to real API)
+        function updatePrayerTimes() {
+            // This would fetch real prayer times from an API
+            console.log('Prayer times updated');
+        }
+        
+        updatePrayerTimes();
+    </script>
+</body>
+</html>
